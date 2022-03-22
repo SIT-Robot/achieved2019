@@ -1,0 +1,26 @@
+<launch>
+  <arg name="host" default="192.168.5.2"/>
+  <arg name="frame_id" default="laser"/>
+
+  <node pkg="robot_setup_tf_tutorial" name="tf_broadcaster" type="tf_broadcaster" output="screen">
+  </node>
+ 
+  <node pkg="robot_setup_tf_tutorial" name="tf_listener" type="tf_listener" output="screen">
+  </node>
+
+  <node pkg="lms1xx" type="LMS1xx_node" name="lms1xx" output="screen" respawn="true">
+   <param name="host" value="$(arg host)" />
+   <param name="frame_id" value="$(arg frame_id)" />
+  </node>
+
+  <node pkg="odometry_publisher_tutorial" type="odometry_publisher" name="odometry_publisher_tutorial" output="screen">
+  </node>
+
+  <node pkg="odometry_publisher_tutorial" type="odometry_computer" name="odometry" output="screen">
+  </node>
+
+  <node pkg="base_controller" name="base_controller" type="base_controller" output="screen" respawn="true">
+  </node>
+  
+  <include file="$(find yocs_velocity_smoother)/launch/standalone.xml"/>
+</launch>

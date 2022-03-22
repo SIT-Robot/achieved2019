@@ -1,0 +1,21 @@
+D:\SIT服务机器人\i-SHIT_Robot\I-Shit_Core\packages>dir
+ Volume in drive D is Projects
+ Volume Serial Number is D014-BC44
+
+ Directory of D:\SIT服务机器人\i-SHIT_Robot\I-Shit_Core\packages
+
+2020/01/19  17:40    <DIR>          .
+2020/01/19  17:40    <DIR>          ..
+2020/01/19  17:40    <DIR>          Baidu.AI.3.6.14
+2020/01/19  17:40    <DIR>          EntityFramework.6.2.0
+2020/01/19  17:40    <DIR>          Newtonsoft.Json.12.0.2
+2020/01/19  17:40    <DIR>          OpenTK.3.1.0
+2020/01/19  17:40    <DIR>          OpenTK.GLControl.3.1.0
+2020/01/19  17:40    <DIR>          System.Data.SQLite.1.0.111.0
+2020/01/19  17:40    <DIR>          System.Data.SQLite.Core.1.0.111.0
+2020/01/19  17:40    <DIR>          System.Data.SQLite.EF6.1.0.111.0
+2020/01/19  17:40    <DIR>          System.Data.SQLite.Linq.1.0.111.0
+2020/01/19  17:40    <DIR>          VVVV.EmguCV.2.4.2.1
+2020/01/19  17:40    <DIR>          ZedGraph.5.1.7
+               0 File(s)              0 bytes
+              13 Dir(s)  24,747,798,528 bytes free

@@ -1,0 +1,12 @@
+﻿<Window x:Class="SITRobotSystem_wpf.SITRobotWindow.testWindows.VisionWindows.MachineLearingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SITRobotSystem_wpf.SITRobotWindow.testWindows.VisionWindows"
+        mc:Ignorable="d"
+        Title="MachineLearingWindow" Height="300" Width="300">
+    <Grid>
+        <Image x:Name="mutipleColotImage" Source="{Binding ImageSource}" Margin="10,-10,9.6,10.4" Stretch="UniformToFill"/>
+    </Grid>
+</Window>

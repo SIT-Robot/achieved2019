@@ -1,0 +1,8 @@
+﻿<Window x:Class="SITRobotSystem_wpf.SITRobotWindow.testWindows.VisionWindows.ColorFrameCVwindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ColorFrameCVwindow" Height="341.007" Width="476.978">
+    <Grid>
+        <Image x:Name="SurfImg" Margin="0,10,162.4,9.8"/>
+    </Grid>
+</Window>

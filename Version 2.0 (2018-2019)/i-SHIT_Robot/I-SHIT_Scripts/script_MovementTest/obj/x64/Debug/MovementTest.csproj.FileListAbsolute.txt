@@ -1,0 +1,16 @@
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\Binary\MovementTest.exe.config
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\Binary\MovementTest.exe
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\Binary\MovementTest.pdb
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\script_MovementTest\obj\x64\Debug\MovementTest.csprojAssemblyReference.cache
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\script_MovementTest\obj\x64\Debug\MainWindow.g.cs
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\script_MovementTest\obj\x64\Debug\App.g.cs
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\script_MovementTest\obj\x64\Debug\MovementTest_MarkupCompile.cache
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\script_MovementTest\obj\x64\Debug\MovementTest_MarkupCompile.lref
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\script_MovementTest\obj\x64\Debug\MainWindow.baml
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\script_MovementTest\obj\x64\Debug\MovementTest.g.resources
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\script_MovementTest\obj\x64\Debug\MovementTest.Properties.Resources.resources
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\script_MovementTest\obj\x64\Debug\MovementTest.csproj.GenerateResource.cache
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\script_MovementTest\obj\x64\Debug\MovementTest.csproj.CoreCompileInputs.cache
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\script_MovementTest\obj\x64\Debug\MovementTest.csproj.CopyComplete
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\script_MovementTest\obj\x64\Debug\MovementTest.exe
+E:\SIT服务机器人\i-SHIT_Robot\I-SHIT_Scripts\script_MovementTest\obj\x64\Debug\MovementTest.pdb

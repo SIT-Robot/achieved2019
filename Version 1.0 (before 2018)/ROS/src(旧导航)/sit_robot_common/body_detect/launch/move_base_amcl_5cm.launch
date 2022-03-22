@@ -1,0 +1,11 @@
+<launch>
+  <master auto="start"/>
+  <param name="/use_sim_time" value="false"/>
+  <node name="robot_states_publish_node" pkg="robot_states_publish" type="robot_states_publish_node" output="screen"/>
+  <include file="$(find sit_robot_2dnav)/move_base_config/move_base.xml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find sit_robot_2dnav)/map/map.pgm 0.05" />
+  <include file="$(find sit_robot_2dnav)/sit_robot_configuration/sit_robot_configuration.xml"/>
+  <include file="$(find sit_robot_2dnav)/move_base_config/amcl_node.xml"/>  
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find sit_robot_2dnav)/single_robot.rviz" />
+   <include file="$(find leg_detector)/launch/leg_detector.launch" />
+</launch> 

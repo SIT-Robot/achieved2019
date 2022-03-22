@@ -1,0 +1,14 @@
+<launch>
+
+  <node pkg="wali2_robot_tf" name="tf_broadcaster" type="tf_broadcaster" output="screen">
+  </node>
+ 
+  <!--<include file="$(find rplidar_ros)/launch/rplidar.launch" />-->
+  
+  <node pkg="wali2_odom" type="wali2_odom_node" name="wali2_odom_node" output="screen">
+  </node>
+
+  <node pkg="wali2_hardware" name="wali2_hardware_node" type="wali2_hardware_node" output="screen" respawn="true">
+  </node>
+ 
+</launch>

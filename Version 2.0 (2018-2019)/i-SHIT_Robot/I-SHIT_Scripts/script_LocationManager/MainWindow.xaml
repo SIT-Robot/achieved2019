@@ -1,0 +1,43 @@
+﻿<Window x:Class="i_Shit_Scirpt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:i_Shit_Scirpt"
+        mc:Ignorable="d"
+        Title="LocationManager" Height="350" Width="525" Loaded="Window_Loaded" Closed="Window_Closed" Visibility="Visible" WindowStartupLocation="CenterScreen">
+    <Grid KeyUp="Grid_KeyUp">
+
+        <ComboBox x:Name="nameBox" HorizontalAlignment="Left" Height="23" Margin="10,50,0,0" Text="" VerticalAlignment="Top" Width="80" IsEditable="True" SelectionChanged="nameBox_SelectionChanged"/>
+        <TextBox x:Name="pxBox" HorizontalAlignment="Left" Height="23" Margin="95,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
+        <TextBox x:Name="pyBox" HorizontalAlignment="Left" Height="23" Margin="152,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
+        <TextBox x:Name="pzBox" HorizontalAlignment="Left" Height="23" Margin="209,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
+        <TextBox x:Name="oxBox" HorizontalAlignment="Left" Height="23" Margin="266,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
+        <TextBox x:Name="oyBox" HorizontalAlignment="Left" Height="23" Margin="323,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
+        <TextBox x:Name="ozBox" HorizontalAlignment="Left" Height="23" Margin="380,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
+        <TextBox x:Name="owBox" HorizontalAlignment="Left" Height="23" Margin="437,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
+
+
+        <Label Content="Name" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top"/>
+
+
+
+
+
+
+        <Label Content="pX" HorizontalAlignment="Left" Margin="95,19,0,0" VerticalAlignment="Top"/>
+        <Label Content="pY" HorizontalAlignment="Left" Margin="152,19,0,0" VerticalAlignment="Top"/>
+        <Label Content="pZ" HorizontalAlignment="Left" Margin="209,19,0,0" VerticalAlignment="Top"/>
+        <Label Content="oX" HorizontalAlignment="Left" Margin="266,19,0,0" VerticalAlignment="Top"/>
+        <Label Content="oY" HorizontalAlignment="Left" Margin="323,19,0,0" VerticalAlignment="Top"/>
+        <Label Content="oZ" HorizontalAlignment="Left" Margin="380,19,0,0" VerticalAlignment="Top"/>
+        <Label Content="oW" HorizontalAlignment="Left" Margin="437,19,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="queryButton" Content="Query By Name (F1)" HorizontalAlignment="Left" Margin="74,123,0,0" VerticalAlignment="Top" Width="159" Click="queryButton_Click" Height="32"/>
+        <Button x:Name="updateButton" Content="Update DataBase (F2)" HorizontalAlignment="Left" Margin="273,123,0,0" VerticalAlignment="Top" Width="159" Click="updateButton_Click" Height="32"/>
+        <Button x:Name="getLocationButton" Content="Get Current From ROS (F3)" HorizontalAlignment="Left" Margin="74,174,0,0" VerticalAlignment="Top" Width="159" Click="getLocationButton_Click" Height="32"/>
+        <Button x:Name="deleteButton" Content="Delete By Name (F4)" HorizontalAlignment="Left" Margin="273,174,0,0" VerticalAlignment="Top" Width="159" Click="deleteButton_Click" Height="32"/>
+        <Button x:Name="gogogoButton" Content="GOGOGO (F5)" HorizontalAlignment="Left" Margin="74,228,0,0" VerticalAlignment="Top" Width="159" Click="gogogoButton_Click" Height="32"/>
+        <Button x:Name="stopNavigateButton" Content="STOP Navigate! (F6)" HorizontalAlignment="Left" Margin="273,228,0,0" VerticalAlignment="Top" Width="159" Click="stopNavigateButton_Click" Height="32"/>
+
+    </Grid>
+</Window>

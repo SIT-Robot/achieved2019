@@ -1,0 +1,53 @@
+主要的几个launch在src/wali2_nav/launch下面
+launch的作用就是一次可以同时启用多个ros节点（ros run一堆东西）
+（了解详情可以打开这几个launch来看）
+可以直接打roslaunch wali2_nav 然后打tab来看
+（Linux下善用tap操作shell会操作得很爽）
+常用的几个launch:
+gmapping（扫地图）：roslaunch wali2_nav move_base_gmapping.launch
+amcl（比赛过程中导航）：roslaunch wali2_nav move_base_amcl_5cm.launch
+常用的几个ros节点
+保存地图：rosrun map_server map_saver
+保存在~下（就是用户目录下），放到src/wali2_nav/map
+（老底盘是src/sit_robot_2dnav/map）
+关于其它ros的说明，详见ros官方document
+
+老底盘的一些坑：
+我在ros程序（主要是sit_robot_devices\base_controller\src\base_controller.cpp和sit_robot_devices\odometry_publisher_tutorial\src\.cpp）
+里把base_controller的指令串口（也就是控制电机速度的）设置为/dev/basemove
+把手臂（虽然已经拆了）和里程计的串口设置为/dev/handodommove
+因为ttyUSB0/1会变。
+所以插上两个USB串口以后，看看哪个有收到类似LL00,00,00JJ这样的数据的，就说明是handodommove
+没有的就是basemove
+比如ttyUSB0没有收到数据，ttyUSB1会收到LL00,00,00JJ这样的东西。那就做映射 
+sudo ln /dev/ttyUSB0 /dev/basemove
+sudo ln /dev/ttyUSB1 /dev/handodommove
+
+还有个坑，就是Linux下普通用户串口默认无权限 
+可以直接暴力给权限 sudo chmod 777 /dev/*
+或者把当前用户加到一个叫dialout的用户组里，这样该用户就默认有串口权限了。
+
+
+新底盘有个坑：因为没有里程计，所以靠编码器模拟里程计，也就是靠“理论的轮子速度”反馈位移信息
+然而实际情况是地板有摩擦力，可能轮子会打滑的原因，轮子理论速度与走的距离和实际不会相符，所以要改个“玄学参数”
+在 src\wali2_mechanism\wali2_hardware\src\hardware.cpp里面，大概第126~128行的位置，也就是这三行代码
+	double vx = (((sqrt(3) * M_PI * WHEEL_R) / 10800.0) * (wheel_v[1] - wheel_v[0]))/2;
+	double vy = ((M_PI * WHEEL_R) / 10800.0) * (2 * wheel_v[2] - wheel_v[1] - wheel_v[0])/2;
+	double vth = -(WHEEL_R * M_PI / (360.0 * 30 * L)) * (wheel_v[0] + wheel_v[1] + wheel_v[2])/2;
+分别是计算X（前后）、Y（左右）、Z（旋转）的位移量，也就是最后的那个数字（最后那个除以2）是个“玄学系数”，大概可以理解为“摩擦系数”
+因为不同的地板和环境摩擦力不同，导致轮子的理论位移和实际走的距离的比值不同，所以在不同的地板和环境上，这个系数的效果不一样。
+也就是需要通过调整这个数字，使得ROS里面得到的机器人位移里程信息与实际的最贴近。
+ROS运行过程中会输出odom累计位移信息，可以让机器人比如在地上走1米（比如可以用卷尺量），然后看看输出的位移是多少，不断调整这个系数，使得真实环境走了1m，ROS里面也走了1m。
+这个的准确性，直接影响到了导航跑点跑不跑得准！！！务必重视这个系数！！！
+常见的“玄学调参法”有二分法；这个系数建议尝试步进0.几，也就是好比初始是2，然后偏大了改1.5，还是偏大了改1，然后偏小了改1.25，还是偏大了改1.125，然后偏小了改1.1875……这样来不断让理论值逼近真实值
+至于好比理论的>实际的是改大还是改小，理论的<实际的是改大还是改小，这个我真不记得了，请后人加上，方便后代调整。
+当然这个问题不能祖传下去，以后建议考虑以下解决方案：1.给底盘加个里程计；2.使用惯性导航；3.换个有里程计的底盘。
+
+激光雷达的坑：不要装得太里面，装突出去一点，不然会扫到自己（看rviz上机器人前面有个点，就是激光扫到自己了）。如果出现扫到机器人自己的情况，请调整激光雷达安装位置。
+
+注意：修改src中所有C/C++文件，比如xxx.c/xxx.h/xxx.cpp都需要重新编译（catkin_make）
+
+Change Log:
+20190406: 添加新底盘的坑 By Yanfeng Lee
+20180301: Created by Yanfeng Lee
+请以后修改的人在这写上Change Log！

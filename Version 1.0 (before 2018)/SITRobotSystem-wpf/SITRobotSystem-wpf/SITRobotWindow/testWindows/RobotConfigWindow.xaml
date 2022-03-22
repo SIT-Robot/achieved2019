@@ -1,0 +1,14 @@
+﻿<Window x:Class="SITRobotSystem_wpf.SITRobotWindow.testWindows.RobotConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RobotConfigWindow" Height="300" Width="300">
+    <Grid>
+        <Button x:Name="BtnSet" Content="Set" HorizontalAlignment="Left" Margin="110,131,0,0" VerticalAlignment="Top" Width="75" Click="BtnSet_Click"/>
+        <Label Content="IP:" HorizontalAlignment="Left" Margin="36,68,0,0" VerticalAlignment="Top"/>
+        <Label Content="Port:" HorizontalAlignment="Left" Margin="23,99,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBIP" HorizontalAlignment="Left" Height="23" Margin="65,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"  TextChanged="TBIP_TextChanged"/>
+        <TextBox x:Name="TBPort" HorizontalAlignment="Left" Height="23" Margin="65,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="机器人通信IP port 设置" VerticalAlignment="Top" Height="58" Width="272"/>
+
+    </Grid>
+</Window>

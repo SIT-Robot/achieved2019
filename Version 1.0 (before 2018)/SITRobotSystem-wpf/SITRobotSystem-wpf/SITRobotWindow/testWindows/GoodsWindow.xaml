@@ -1,0 +1,10 @@
+﻿<Window x:Class="WpfApplication1.DAL.GoodsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="GoodsWindow" Height="413.6" Width="728">
+    <Grid>
+        <Button x:Name="Bt_Find" Content="FIND" HorizontalAlignment="Left" Height="43" Margin="313,44,0,0" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.517,0.688" Click="Bt_Find_Click"/>
+        <TextBox x:Name="TB_FindNo" HorizontalAlignment="Left" Height="43" Margin="451,44,0,0" TextWrapping="Wrap" Text="Find No." VerticalAlignment="Top" Width="115"/>
+        <TextBox x:Name="TB_TypeName" HorizontalAlignment="Left" Height="43" Margin="126,44,0,0" TextWrapping="Wrap" Text="TypeName" VerticalAlignment="Top" Width="115" />
+    </Grid>
+</Window>

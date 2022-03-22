@@ -1,0 +1,20 @@
+<package>
+    <name>sit_robot_common</name>
+    <version>1.11.8</version>
+    <description>
+        robot's navigation
+    </description>
+    <maintainer email="davidvlu@gmail.com">David V. Lu!!</maintainer>
+    <maintainer email="fergs@unboundedrobotics.com">Michael Ferguson</maintainer>
+    <author>contradict@gmail.com</author>
+    <author>Eitan Marder-Eppstein</author>
+    <license>BSD,LGPL,LGPL (amcl)</license>  
+    <url>http://wiki.ros.org/navigation</url>
+
+    <buildtool_depend>catkin</buildtool_depend>
+    <run_depend></run_depend>
+
+    <export>
+        <metapackage/>
+    </export>
+</package>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="SITRobotSystem_wpf.SITRobotWindow.testWindows.GoodsTestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="GoodsTestWindow" Height="319" Width="352">
+    <Grid>
+        <Button x:Name="BtnPicChoice" Content="选择图片" HorizontalAlignment="Left" Margin="219,32,-0.4,0" VerticalAlignment="Top" Width="75" Click="BtnPicChoice_Click"/>
+        <TextBox x:Name="TBPicPath" HorizontalAlignment="Left" Height="44" Margin="81,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="ImgPath" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="219,148,-0.4,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="TBGno" HorizontalAlignment="Left" Height="23" Margin="81,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TBGno_TextChanged"/>
+        <Label Content="Gno" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top"/>
+        <Label Content="Gname" HorizontalAlignment="Left" Margin="10,176,0,0" VerticalAlignment="Top"/>
+        <Button Content="insert" HorizontalAlignment="Left" Margin="219,57,-0.4,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="219,81,-0.4,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="TBGname" HorizontalAlignment="Left" Height="23" Margin="81,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TBGname_TextChanged" />
+        <Button Content="Insert" HorizontalAlignment="Left" Margin="219,172,-0.4,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="219,196,-0.4,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="GCategory" HorizontalAlignment="Left" Margin="10,207,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBGCategory" HorizontalAlignment="Left" Height="23" Margin="81,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnShow" Content="showGoods" HorizontalAlignment="Left" Margin="219,220,0,0" VerticalAlignment="Top" Width="75" Click="BtnShow_Click"/>
+
+    </Grid>
+</Window>

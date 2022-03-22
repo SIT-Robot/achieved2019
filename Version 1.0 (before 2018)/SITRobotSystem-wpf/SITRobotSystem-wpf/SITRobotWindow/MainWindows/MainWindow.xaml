@@ -1,0 +1,19 @@
+﻿<Window x:Class="SITRobotSystem_wpf.SITRobotWindow.MainWindows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SITRobotWindowMainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="290*"/>
+            <RowDefinition Height="31*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="247*"/>
+            <ColumnDefinition Width="271*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnCompetition" Content="比赛" Margin="0,0,257.4,-0.2" BorderBrush="#FF707070" Background="#FFB8FF7B" Grid.ColumnSpan="2" Click="btnCompetition_Click" Grid.RowSpan="2"/>
+        <Button x:Name="BTN_Test" Content="测试" HorizontalAlignment="Left" Margin="4.8,0,-1.6,0.733" Width="268" Background="#FF5EFCFF" Grid.Column="1" Click="BTN_Test_Click"/>
+        <Button x:Name="BtnTestConnection" Content="测试链接" Grid.Column="1" Margin="4.8,0.4,-1.6,-0.2" Grid.Row="1" Background="#FFF68686" Click="BtnTestConnection_Click"/>
+
+    </Grid>
+</Window>

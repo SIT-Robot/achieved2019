@@ -1,0 +1,15 @@
+几个用来Debug的Script：
+MachineLearningTest.exe 测试深度学习的三步曲
+LocationManager.exe 管理Location数据库
+MovementTest.exe 开车神器
+HandDebuger.exe 调手臂
+
+这里在重申一些（虽然i-SHIT Dev Guide里面也有写）：
+Data目录存数据的地方
+其中RosLocationDB.db是Location数据库 SQLite
+RosServer.txt ROS服务器地址
+MLServer.txt 深度学习服务器地址
+HandCOMPortBaud.txt 手臂串口波特率
+HandCOMPortName.txt 手臂串口名
+KinectShotImages Kinect所有拍过的照片 可以经常清一清 一般也没什么用了
+Faces 人脸识别留下的结果 也可以清一清 记得最好每次开始比赛之前 （尤其是用到人脸识别的程序）清空一下

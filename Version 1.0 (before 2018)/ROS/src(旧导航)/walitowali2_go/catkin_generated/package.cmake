@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "walitowali2_go")
+set(walitowali2_go_MAINTAINER "stamdordli <stamdordli@todo.todo>")
+set(walitowali2_go_DEPRECATED "")
+set(walitowali2_go_VERSION "0.0.0")
+set(walitowali2_go_BUILD_DEPENDS "geometry_msgs" "roscpp" "rospy")
+set(walitowali2_go_RUN_DEPENDS "geometry_msgs" "roscpp" "rospy")
+set(walitowali2_go_BUILDTOOL_DEPENDS "catkin")

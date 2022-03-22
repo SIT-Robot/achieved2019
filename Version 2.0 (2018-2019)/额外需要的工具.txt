@@ -1,0 +1,31 @@
+C:\Users\sunnysab>cd /d D:\SIT服务机器人\开发环境
+
+D:\SIT服务机器人\开发环境>dir
+ Volume in drive D is Projects
+ Volume Serial Number is D014-BC44
+
+ Directory of D:\SIT服务机器人\开发环境
+
+2020/01/19  18:13    <DIR>          .
+2020/01/19  18:13    <DIR>          ..
+2017/09/17  02:16       289,212,808 KinectSDK-v2.0_1409-Setup.exe
+2019/04/10  22:19        17,338,357 labelImg.exe
+2019/04/10  07:11        59,966,632 labelimg使用指南.zip
+2019/04/10  07:16           224,054 labelImg画框框说明.docx
+2019/04/06  16:39         9,113,600 MicrosoftSpeechPlatformSDK.msi
+2018/05/06  15:31        33,126,740 PyQt4-4.11.4-gpl-Py2.7-Qt4.8.7-x64.exe
+2018/05/06  15:25        20,246,528 python-2.7.15.amd64.msi
+2018/10/12  19:58         4,002,961 Reflector_10.0.4.406.vsix
+2017/06/15  18:01         3,969,024 SITRobotSystemDataBase_LogBackup_2016-04-22_00-03-38.bak
+2019/04/06  16:39         2,674,688 SpeechPlatformRuntime.msi
+2018/03/12  13:10        17,182,347 sqlitestudio-3.1.1.zip
+2011/06/14  14:08         1,733,120 批量重命名软件.exe
+2018/08/08  13:28               111 更改后缀为jpg.bat
+2017/09/17  02:13        94,711,217 触摸屏驱动.zip
+              14 File(s)    553,502,187 bytes
+               2 Dir(s)  26,442,252,288 bytes free
+
+
+链接：https://pan.baidu.com/s/1nJLIlOB1vlNRR1_wOO-_MQ 
+提取码：rh7a 
+复制这段内容后打开百度网盘手机App，操作更方便哦

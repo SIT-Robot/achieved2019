@@ -1,0 +1,9 @@
+﻿<Window x:Class="SITRobotSystem_wpf.SITRobotWindow.CompetitionWindows.RoboZoo2015Windows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RoboZoo2015Windows" Height="300" Width="300">
+    <Grid>
+        <Button Content="start" HorizontalAlignment="Left" Margin="78,49,0,0" VerticalAlignment="Top" Width="159" Height="124" Click="Button_Click"/>
+
+    </Grid>
+</Window>

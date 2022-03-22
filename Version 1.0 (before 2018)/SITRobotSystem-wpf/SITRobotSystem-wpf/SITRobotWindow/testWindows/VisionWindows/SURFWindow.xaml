@@ -1,0 +1,28 @@
+﻿<Window x:Class="SITRobotSystem_wpf.SITRobotWindow.testWindows.VisionWindows.SURFWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SURFWindow" Height="373" Width="525" Closed="Window_Closed">
+    <Grid Margin="0,0,0,-4">
+        <Image x:Name="SurfImg" Margin="0,10,162,53"/>
+        <Button x:Name="BtnOnlySurf" Content="SURF" Margin="0,0,87.4,87.8" Height="19" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" Click="BtnOnlySurf_Click"/>
+        <TextBlock x:Name="TBSURFres" Margin="0,0,10.4,9.8" TextWrapping="WrapWithOverflow" Text="RESULT:" Height="73" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="147"/>
+        <TextBox x:Name="TBObjPath" Margin="0,0,42.4,236.8" TextWrapping="Wrap" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="120"/>
+        <Label Content="obj：" Margin="0,0,122.4,261.8" Height="26" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="40"/>
+        <Button x:Name="BtnloadObjPath" Content="..." Margin="0,0,10.4,236.8" VerticalAlignment="Bottom" Height="23" HorizontalAlignment="Right" Width="26" Click="BtnloadObjPath_Click"/>
+        <Label Content="sence:" HorizontalAlignment="Right" Margin="0,0,117.4,205.8" Height="26" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="TBSencePath" Margin="0,0,42.4,178.8" TextWrapping="Wrap" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="120"/>
+        <Button x:Name="BtnLoadSencePath" Content="..." Margin="0,0,10.4,178.8" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="26" Click="BtnLoadSencePath_Click"/>
+        <Button Content="SurfWithKinect" Margin="0,0,54.6,129.2" Click="Button_Click_1" HorizontalAlignment="Right" Width="107" Height="19" VerticalAlignment="Bottom"/>
+        <TextBox HorizontalAlignment="Right" Margin="0,10,37,0" TextWrapping="Wrap" Text="bottle purple" Width="120" Height="50" VerticalAlignment="Top"/>
+        <Button Content="Button" HorizontalAlignment="Right" Margin="0,10,8,0" VerticalAlignment="Top" Width="24"/>
+        <TextBox x:Name="distanceTB" Margin="0,0,7.6,153.2" TextWrapping="Wrap" Text="0.85" HorizontalAlignment="Right" Width="87" Height="23" VerticalAlignment="Bottom"/>
+        <Label Content="距离限制" HorizontalAlignment="Right" Margin="0,0,103.6,153.2" VerticalAlignment="Bottom"/>
+        <Button x:Name="Grabcut" Content="Grabcut" HorizontalAlignment="Left" Height="22" Margin="172,0,0,13" VerticalAlignment="Bottom" Width="58" Click="Grabcut_Click"/>
+        <Button x:Name="SurfWithKinect2" Content="SurfWithKinect2" HorizontalAlignment="Left" Height="22" Margin="235,0,0,13" VerticalAlignment="Bottom" Width="125" Click="SurfWithKinect2_Click"/>
+        <TextBox x:Name="tx1" HorizontalAlignment="Left" Margin="10,0,0,13" TextWrapping="Wrap" Width="40" RenderTransformOrigin="1.55,0.423" Height="26" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="tx2" HorizontalAlignment="Left" Height="26" Margin="50,0,0,13" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="40" RenderTransformOrigin="1.55,0.423"/>
+        <TextBox x:Name="tx3" HorizontalAlignment="Left" Margin="90,0,0,13" TextWrapping="Wrap" Width="40" RenderTransformOrigin="1.55,0.423" Height="26" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="tx4" HorizontalAlignment="Left" Height="26" Margin="130,0,0,13" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="40" RenderTransformOrigin="1.55,0.423"/>
+
+    </Grid>
+</Window>

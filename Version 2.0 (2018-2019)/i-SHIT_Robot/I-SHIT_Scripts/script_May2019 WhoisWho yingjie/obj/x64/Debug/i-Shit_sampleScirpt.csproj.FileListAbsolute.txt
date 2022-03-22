@@ -1,0 +1,43 @@
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\i-Shit_sampleScirpt.csprojFakesResolveAssemblyReference.cache
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\fakes.args
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\Accessibility.dll
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\Emgu.CV.dll
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\Emgu.CV.xml
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\Emgu.Util.dll
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\Emgu.Util.xml
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\i-Shit_Core.1.0.0.0.Fakes.dll
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\i-Shit_Core.1.0.0.0.Fakes.fakesconfig
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\i-Shit_Core.1.0.0.0.Fakes.pdb
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\i-Shit_Core.1.0.0.0.Fakes.xml
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\i-Shit_Core.dll
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\i-Shit_Core.pdb
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\Microsoft.Kinect.dll
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\Microsoft.Kinect.VisualGestureBuilder.dll
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\Microsoft.Kinect.VisualGestureBuilder.xml
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\Microsoft.Kinect.xml
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\Newtonsoft.Json.dll
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\b\System.Data.SQLite.dll
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\f.ah
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\f.ch
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\f.cs
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\f.csproj
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\f.fakes
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\f.fakesconfig
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\o\f.csproj.FileListAbsolute.txt
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\o\f.csprojResolveAssemblyReference.cache
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\o\i-Shit_Core.1.0.0.0.Fakes.dll
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\Fakes\isc\o\i-Shit_Core.1.0.0.0.Fakes.pdb
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\MainWindow.g.cs
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\App.g.cs
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\i-Shit_sampleScirpt_MarkupCompile.cache
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\i-Shit_sampleScirpt_MarkupCompile.lref
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\Binary\i-Shit_sampleScirpt.exe.config
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\Binary\i-Shit_sampleScirpt.exe
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\Binary\i-Shit_sampleScirpt.pdb
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\MainWindow.baml
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\i-Shit_sampleScirpt.g.resources
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\i_Shit_sampleScirpt.Properties.Resources.resources
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\i-Shit_sampleScirpt.csproj.GenerateResource.Cache
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\i-Shit_sampleScirpt.exe
+C:\Users\ASS\Documents\服务机器人共享同步\i-SHIT_Robot\I-SHIT_Scripts\script_sampleScript - 副本\obj\x64\Debug\i-Shit_sampleScirpt.pdb

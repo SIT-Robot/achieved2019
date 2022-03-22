@@ -1,0 +1,9 @@
+﻿<Window x:Class="SITRobotSystem_wpf.SITRobotWindow.CompetitionWindows.OpenChallengeWindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="OpenChallengeWindows" Height="300" Width="300">
+    <Grid>
+        <Button x:Name="Btn_OC" Content="Start！！！" HorizontalAlignment="Left" Margin="74,89,0,0" VerticalAlignment="Top" Width="140" Height="101" Click="Btn_OC_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="SITRobotSystem_wpf.SITRobotWindow.CompetitionWindows.WakeMeUpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WakeMeUpWindow" Height="300" Width="300">
+    <Grid>
+        <Button Content="start" HorizontalAlignment="Left" Height="25" Margin="10,124,0,0" VerticalAlignment="Top" Width="106" Click="BtnStart_Click"/>
+        <Button Content="AwakePerson" HorizontalAlignment="Left" Margin="176,86,0,0" VerticalAlignment="Top" Width="97" Click="BtnAwake_OnClick"/>
+        <Label Content="Competition" HorizontalAlignment="Left" Margin="23,94,0,0" VerticalAlignment="Top" />
+        <Button Content="TakeOrder" HorizontalAlignment="Left" Margin="176,128,0,0" VerticalAlignment="Top" Width="97" Click="BtnOrder_Click"/>
+        <Button Content="ServeBreakfast" HorizontalAlignment="Left" Margin="176,172,0,0" VerticalAlignment="Top" Width="97" Click="BtnServe_Click"/>
+        <Button Content="DeliverBreakfast" HorizontalAlignment="Left" Margin="176,218,0,0" VerticalAlignment="Top" Width="97" Click="BtnDeliver_Click"/>
+        <Label Content="Test" HorizontalAlignment="Left" Margin="204,38,0,0" VerticalAlignment="Top" />
+
+    </Grid>
+</Window>

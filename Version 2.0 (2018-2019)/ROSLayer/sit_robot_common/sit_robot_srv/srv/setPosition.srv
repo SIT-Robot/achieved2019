@@ -1,0 +1,12 @@
+string point_name
+int32 id
+float64 positionx
+float64 positiony
+float64 positionz
+float64 oritationx
+float64 oritationy
+float64 oritationz
+float64 oritationw
+int32 pointstate
+---
+int32 isSuccess

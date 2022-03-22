@@ -1,0 +1,16 @@
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom\pipecom\obj\x86\Debug\pipecom.Form1.resources
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom\pipecom\obj\x86\Debug\pipecom.Properties.Resources.resources
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom\pipecom\obj\x86\Debug\pipecom.csproj.GenerateResource.Cache
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom\pipecom\bin\Debug\pipecom.exe
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom\pipecom\bin\Debug\pipecom.pdb
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom\pipecom\obj\x86\Debug\pipecom.exe
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom\pipecom\obj\x86\Debug\pipecom.pdb
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom\pipecom\obj\x86\Debug\pipecom.csprojResolveAssemblyReference.cache
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom_recv\pipecom\obj\x86\Debug\pipecom.exe
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom_recv\pipecom\obj\x86\Debug\pipecom.pdb
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom_recv\pipecom\bin\Debug\pipecom.exe
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom_recv\pipecom\bin\Debug\pipecom.pdb
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom_recv\pipecom\obj\x86\Debug\pipecom.csprojResolveAssemblyReference.cache
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom_recv\pipecom\obj\x86\Debug\pipecom.Form1.resources
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom_recv\pipecom\obj\x86\Debug\pipecom.Properties.Resources.resources
+W:\Data\工作\源代码\SIT机器人控制中心\pipecom\pipecom_recv\pipecom\obj\x86\Debug\pipecom.csproj.GenerateResource.Cache

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<launch>
+  <node pkg="robot_setup_tf_tutorial" name="tf_broadcaster" type="tf_broadcaster" output="screen"/>
+  <node pkg="robot_setup_tf_tutorial" name="tf_listener" type="tf_listener" output="screen"/>
+  
+</launch>

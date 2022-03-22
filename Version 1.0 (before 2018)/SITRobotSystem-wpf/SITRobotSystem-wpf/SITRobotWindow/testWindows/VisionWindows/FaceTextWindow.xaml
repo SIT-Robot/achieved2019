@@ -1,0 +1,17 @@
+﻿<Window x:Class="SITRobotSystem_wpf.SITRobotWindow.testWindows.VisionWindows.FaceTextWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SITRobotSystem_wpf.SITRobotWindow.testWindows.VisionWindows"
+        mc:Ignorable="d"
+        Title="FaceTextWindow" Height="393.333" Width="442.667">
+    <Grid>
+        <Button x:Name="face" Content="识别" HorizontalAlignment="Left" Height="28" Margin="182,324,0,0" VerticalAlignment="Top" Width="76" Click="face_Click"/>
+        <Image x:Name="faceImg" HorizontalAlignment="Left" Height="265" Margin="68,10,0,0" VerticalAlignment="Top" Width="304"/>
+        <TextBox x:Name="txfaceName" HorizontalAlignment="Left" Height="29" Margin="128,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171" />
+        <Button x:Name="btRecognition" Content="辨别" HorizontalAlignment="Left" Margin="54,324,0,0" VerticalAlignment="Top" Width="75" Height="28" Click="recognition_Click"/>
+        <Button x:Name="btSave" Content="保存" HorizontalAlignment="Left" Height="28" Margin="321,324,0,0" VerticalAlignment="Top" Width="73" Click="save_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,11 @@
+<launch>
+  <master auto="start"/>
+  <param name="/use_sim_time" value="false"/>
+  
+  <include file="$(find sit_robot_2dnav)/launch/move_base_gmapping.xml"/>
+
+  <include file="$(find leg_detector)/launch/leg_detector.xml"/>
+  
+  <!--<node name="laser_obstacle_avoidance_node" pkg="laser_obstacle_avoidance" type="laser_obstacle_avoidance_node" output="screen"/> -->
+
+</launch>

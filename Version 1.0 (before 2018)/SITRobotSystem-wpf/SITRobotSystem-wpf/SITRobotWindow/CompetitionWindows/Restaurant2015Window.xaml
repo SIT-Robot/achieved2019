@@ -1,0 +1,10 @@
+﻿<Window x:Class="SITRobotSystem_wpf.SITRobotWindow.CompetitionWindows.Restaurant2015Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Restaurant2015Window" Height="300" Width="300">
+    <Grid>
+        <Button x:Name="Btn_Restaurant" Content="START2015！" HorizontalAlignment="Left" Margin="71,59,0,0" VerticalAlignment="Top" Width="150" Height="51" Click="Button_Click"/>
+        <Button x:Name="Btn_Restaurant2017" Content="START2017！" HorizontalAlignment="Left" Margin="71,138,0,0" VerticalAlignment="Top" Width="150" Height="51" Click="Btn_Restaurant2017_Click"/>
+
+    </Grid>
+</Window>

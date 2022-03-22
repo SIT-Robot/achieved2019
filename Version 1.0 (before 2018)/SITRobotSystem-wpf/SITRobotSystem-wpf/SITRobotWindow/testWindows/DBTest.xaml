@@ -1,0 +1,41 @@
+﻿<Window x:Class="SITRobotSystem_wpf.SITRobotWindow.testWindows.DBTestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="559.627">
+    <Grid RenderTransformOrigin="0.494,0.517">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53*"/>
+            <RowDefinition Height="268*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="BtnGetPosition" Content="Get" HorizontalAlignment="Left" Margin="362,33.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.617,0.743" Click="BtnGetPosition_Click"/>
+        <Button x:Name="BTN_INSERT" Content="INSERT" HorizontalAlignment="Left" Margin="362,57.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="BTN_INSERT_Click"/>
+        <TextBox x:Name="TB_Pno" HorizontalAlignment="Left" Height="30" Margin="107,37.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Pno" VerticalAlignment="Top" Width="86" TextChanged="TB_Pno_TextChanged"/>
+        <TextBox x:Name="TB_ProomName" HorizontalAlignment="Left" Height="30" Margin="107,83.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="ProomName" VerticalAlignment="Top" Width="86" TextChanged="TB_ProomName_TextChanged"/>
+        <TextBox x:Name="TB_PName" HorizontalAlignment="Left" Height="30" Margin="107,130.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="PName" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.041,0.556" TextChanged="TB_PName_TextChanged"/>
+        <TextBox x:Name="TB_PCategroy" HorizontalAlignment="Left" Height="30" Margin="107,175.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="PCategroy" VerticalAlignment="Top" Width="86"/>
+        <Label Content="Pno" HorizontalAlignment="Left" Height="30" Margin="10,37.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="81"/>
+        <Label HorizontalAlignment="Left" Height="30" Margin="5,175.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.478,2.207" Content="PCategroy"/>
+        <Label Content="PName" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.426,2.02" Margin="5,130.2,0,0" Grid.Row="1"/>
+        <Label Content="ProomName" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.426,2.02" Margin="5,83.2,0,0" Grid.Row="1"/>
+        <Label Content="PpostionX" HorizontalAlignment="Left" Margin="198,14.2,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="PpostionY" HorizontalAlignment="Left" Margin="198,45.2,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="PpostionZ" HorizontalAlignment="Left" Margin="198,71.2,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="PorientationX" HorizontalAlignment="Left" Margin="198,102.2,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="PorientationY" HorizontalAlignment="Left" Margin="198,133.2,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="PorientationZ" HorizontalAlignment="Left" Margin="198,164.2,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="PorientationW" HorizontalAlignment="Left" Margin="198,195.2,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="TB_PpostionX" HorizontalAlignment="Left" Height="23" Margin="272,20.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="81"/>
+        <TextBox x:Name="TB_PpostionY" HorizontalAlignment="Left" Height="23" Margin="272,48.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="81"/>
+        <TextBox x:Name="TB_PpostionZ" HorizontalAlignment="Left" Height="23" Margin="272,76.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="81" RenderTransformOrigin="0.471,2.991"/>
+        <TextBox x:Name="TB_PorientationX" HorizontalAlignment="Left" Height="23" Margin="291,104.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="81"/>
+        <TextBox x:Name="TB_PorientationY" HorizontalAlignment="Left" Height="23" Margin="291,137.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="81"/>
+        <TextBox x:Name="TB_PorientationZ" HorizontalAlignment="Left" Height="23" Margin="291,167.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="81"/>
+        <TextBox x:Name="TB_PorientationW" HorizontalAlignment="Left" Height="23" Margin="291,199.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="81"/>
+        <Button x:Name="BtnUpdate" Content="Update" HorizontalAlignment="Left" Margin="362,80.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="BtnUpdate_Click"/>
+        <Button x:Name="GoToPlace" Content="Goto" HorizontalAlignment="Left" Margin="469,239.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="GoToPlace_Click"/>
+        <TextBox x:Name="TB_PNameGola" HorizontalAlignment="Left" Height="23" Margin="383,239.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="81"/>
+        <Label Content="发送的目标Pno" HorizontalAlignment="Left" Margin="256,235,0,0" Grid.Row="1" VerticalAlignment="Top" Width="115"/>
+        <Button x:Name="BtnShow" Content="show" HorizontalAlignment="Left" Margin="467,144,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="BtnShow_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="532"><Run Text="说明：机器人记点功能Pno：点号 ProomName地点房间名 Pname点名 PCategory：点类型名 "/><LineBreak/><Run Text="Get获取机器人当前位置 Insert插入数据库 Update 更新数据库&#x9;"/><Run Text="show显示"/><Run Text=" Goto发送跑点No"/></TextBlock>
+    </Grid>
+</Window>

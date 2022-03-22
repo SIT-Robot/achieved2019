@@ -1,0 +1,20 @@
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate stub for i_Shit_Core.Library.GestureResultView: type is sealed.
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate stub for i_Shit_Core.Library.KinectInfo: type is sealed.
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate stub for i_Shit_Core.Library.Sex: type is a value type.
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate stub for i_Shit_Core.Core.Functions.Function: type is sealed.
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate stub for i_Shit_Core.Core.Drivers.Driver: type is sealed.
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate stub for Microsoft.Samples.Kinect.BodyBasics.Properties.Resources: type is not visible to exported or assembly(i-Shit_Core.1.0.0.0.Fakes).
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate stub for Microsoft.Samples.Kinect.BodyBasics.Properties.Settings: type is sealed.
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate stub for <PrivateImplementationDetails>: type is sealed.
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate shim for i_Shit_Core.CoreWindow+TextBoxWriter: type is not visible to exported or assembly(i-Shit_Core.1.0.0.0.Fakes).
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate shim for i_Shit_Core.Library.Sex: type is an enum.
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate shim for i_Shit_Core.Core.Core+<>c__DisplayClass0_0: type is not supported because of internal limitations.
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate shim for i_Shit_Core.Core.Functions.Function+<>c: type is not supported because of internal limitations.
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate shim for i_Shit_Core.Core.Functions.Function+<>c__DisplayClass38_0: type is not supported because of internal limitations.
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate shim for i_Shit_Core.Core.Functions.Function+<>c__DisplayClass6_0: type is not supported because of internal limitations.
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate shim for i_Shit_Core.Core.Functions.Function+<>c__DisplayClass6_1: type is not supported because of internal limitations.
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate shim for i_Shit_Core.Core.Drivers.Driver+<>c: type is not supported because of internal limitations.
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate shim for i_Shit_Core.Core.Drivers.Driver+<>c__DisplayClass29_0: type is not supported because of internal limitations.
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate shim for Microsoft.Samples.Kinect.BodyBasics.Properties.Resources: type is not visible to exported or assembly(i-Shit_Core.1.0.0.0.Fakes).
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate shim for Microsoft.Samples.Kinect.BodyBasics.Properties.Settings: type is not visible to exported or assembly(i-Shit_Core.1.0.0.0.Fakes).
+D:\Data\工作\源代码\I-SHIT\I-SHIT_Scripts\script_GPSR\Fakes\i-Shit_Core.fakes : warning : Cannot generate shim for <PrivateImplementationDetails>: type is not supported because of internal limitations.

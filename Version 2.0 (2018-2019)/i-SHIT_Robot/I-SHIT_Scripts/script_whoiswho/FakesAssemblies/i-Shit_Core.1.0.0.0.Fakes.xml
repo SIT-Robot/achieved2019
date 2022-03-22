@@ -1,0 +1,1823 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>i-Shit_Core.1.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.IShit_CoreDelegates">
+            <summary>Contains custom delegates used for the stubs and shims of i-Shit_Core</summary>
+        </member>
+        <member name="T:i_Shit_Core.Core.Drivers.Fakes.ShimDriver">
+            <summary>Shim type of i_Shit_Core.Core.Drivers.Driver</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.Kinect_ColorFrameReader_FrameArrivedObjectColorFrameArrivedEventArgs">
+            <summary>Sets the shim of Driver.Kinect_ColorFrameReader_FrameArrived(Object sender, ColorFrameArrivedEventArgs e)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.Kinect_InitKinect">
+            <summary>Sets the shim of Driver.Kinect_InitKinect()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.Reader_MultiSourceFrameArrivedObjectMultiSourceFrameArrivedEventArgs">
+            <summary>Sets the shim of Driver.Reader_MultiSourceFrameArrived(Object sender, MultiSourceFrameArrivedEventArgs e)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.Ros_SendString">
+            <summary>Sets the shim of Driver.Ros_Send(String message_)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.SQLite_DeleteSQLiteConnectionStringStringArrayStringArray">
+            <summary>Sets the shim of Driver.SQLite_Delete(SQLiteConnection connection, String tablename, String[] condition_column, String[] condition_columnData)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.SQLite_InsertSQLiteConnectionStringStringArrayStringArray">
+            <summary>Sets the shim of Driver.SQLite_Insert(SQLiteConnection connection, String tablename, String[] column, String[] data)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.SQLite_OpenDBString">
+            <summary>Sets the shim of Driver.SQLite_OpenDB(String DBName)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.SQLite_QuerySQLiteConnectionStringStringArrayStringArray">
+            <summary>Sets the shim of Driver.SQLite_Query(SQLiteConnection connection, String tablename, String[] condition_column, String[] condition_columnData)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.SQLite_UpdateSQLiteConnectionStringStringArrayStringArrayStringArrayStringArray">
+            <summary>Sets the shim of Driver.SQLite_Update(SQLiteConnection connection, String tablename, String[] target_column, String[] target_data, String[] condition_column, String[] condition_columnData)</summary>
+        </member>
+        <member name="T:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.ShimCOMPort">
+            <summary>Shim type of i_Shit_Core.Core.Drivers.Driver+COMPort</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.ShimCOMPort.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.ShimCOMPort.#ctor(i_Shit_Core.Core.Drivers.Driver.COMPort)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.ShimCOMPort.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.ShimCOMPort.AllInstances.OpenCOMPort">
+            <summary>Sets the shim of COMPort.OpenCOMPort()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.ShimCOMPort.AllInstances.SendBytesAndWaitReceiveByteArrayInt32">
+            <summary>Sets the shim of COMPort.SendBytesAndWaitReceive(Byte[] bytes, Int32 readBytesCount)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.ShimCOMPort.AllInstances.SendBytesOnlyByteArray">
+            <summary>Sets the shim of COMPort.SendBytesOnly(Byte[] bytes)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.ShimCOMPort.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.ShimCOMPort.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.ShimCOMPort.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.ShimCOMPort.ConstructorStringInt32">
+            <summary>Sets the shim of COMPort.COMPort(String _port_name, Int32 _baud_rate)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.ShimCOMPort.OpenCOMPort">
+            <summary>Sets the shim of COMPort.OpenCOMPort()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.ShimCOMPort.SendBytesAndWaitReceiveByteArrayInt32">
+            <summary>Sets the shim of COMPort.SendBytesAndWaitReceive(Byte[] bytes, Int32 readBytesCount)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.ShimCOMPort.SendBytesOnlyByteArray">
+            <summary>Sets the shim of COMPort.SendBytesOnly(Byte[] bytes)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.StaticConstructor">
+            <summary>Sets the shim of Driver.Driver()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.TTS_SpeakString">
+            <summary>Sets the shim of Driver.TTS_Speak(String _whatYouWantToSay)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.Test_aaaa">
+            <summary>Sets the shim of Driver.Test_aaaa()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.Voice_Recognize_CreatGrammarArrayListRecognizerInfoString">
+            <summary>Sets the shim of Driver.Voice_Recognize_CreatGrammar(ArrayList _commandsStringsList, RecognizerInfo _recognizer, String grammerName)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.Voice_Recognize_GetCommonRecognizer">
+            <summary>Sets the shim of Driver.Voice_Recognize_GetCommonRecognizer()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.Voice_Recognize_GetKinectRecognizer">
+            <summary>Sets the shim of Driver.Voice_Recognize_GetKinectRecognizer()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Drivers.Fakes.ShimDriver.Voice_Recognize_StartRecognizeSpeechRecognitionEngineGrammarEventHandlerOfSpeechRecognizedEventArgsEventHandlerOfSpeechRecognitionRejectedEventArgsEventHandlerOfRecognizerUpdateReachedEventArgs">
+            <summary>Sets the shim of Driver.Voice_Recognize_StartRecognize(SpeechRecognitionEngine _speechEngine, Grammar _grammar, EventHandler`1&lt;SpeechRecognizedEventArgs&gt; _speechRecognized, EventHandler`1&lt;SpeechRecognitionRejectedEventArgs&gt; _speechRejected, EventHandler`1&lt;RecognizerUpdateReachedEventArgs&gt; _recognizerUpdateReached)</summary>
+        </member>
+        <member name="T:i_Shit_Core.Core.Fakes.ShimCore">
+            <summary>Shim type of i_Shit_Core.Core.Core</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Fakes.ShimCore.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Fakes.ShimCore.#ctor(i_Shit_Core.Core.Core)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:i_Shit_Core.Core.Fakes.ShimCore.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Fakes.ShimCore.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Fakes.ShimCore.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Fakes.ShimCore.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Fakes.ShimCore.ConstructorScripts">
+            <summary>Sets the shim of Core.Core(Scripts s)</summary>
+        </member>
+        <member name="T:i_Shit_Core.Core.Fakes.ShimScripts">
+            <summary>Shim type of i_Shit_Core.Core.Scripts</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Fakes.ShimScripts.#ctor(i_Shit_Core.Core.Scripts)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:i_Shit_Core.Core.Fakes.ShimScripts.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Fakes.ShimScripts.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Fakes.ShimScripts.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Fakes.ShimScripts.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Fakes.ShimScripts.Constructor">
+            <summary>Sets the shim of Scripts.Scripts()</summary>
+        </member>
+        <member name="T:i_Shit_Core.Core.Fakes.StubCore">
+            <summary>Stub type of i_Shit_Core.Core.Core</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Fakes.StubCore.#ctor(i_Shit_Core.Core.Scripts)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Fakes.StubCore.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Fakes.StubCore.InitializeStub">
+            <summary>Initializes a new instance of type StubCore</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Fakes.StubCore.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Fakes.StubCore.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:i_Shit_Core.Core.Fakes.StubScripts">
+            <summary>Stub type of i_Shit_Core.Core.Scripts</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Fakes.StubScripts.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Fakes.StubScripts.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Fakes.StubScripts.InitScript">
+            <summary>Sets the stub of Scripts.InitScript()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Core.Fakes.StubScripts.InitScript01">
+            <summary>Sets the stub of Scripts.InitScript()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Fakes.StubScripts.InitializeStub">
+            <summary>Initializes a new instance of type StubScripts</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Fakes.StubScripts.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Fakes.StubScripts.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Fakes.StubScripts.Script_Process">
+            <summary>Sets the stub of Scripts.Script_Process()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Core.Fakes.StubScripts.Script_Process01">
+            <summary>Sets the stub of Scripts.Script_Process()</summary>
+        </member>
+        <member name="T:i_Shit_Core.Core.Function.Fakes.ShimFunction">
+            <summary>Shim type of i_Shit_Core.Core.Function.Function</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Function.Fakes.ShimFunction.#ctor(i_Shit_Core.Core.Function.Function)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:i_Shit_Core.Core.Function.Fakes.ShimFunction.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Function.Fakes.ShimFunction.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Function.Fakes.ShimFunction.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Function.Fakes.ShimFunction.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Function.Fakes.ShimFunction.Constructor">
+            <summary>Sets the shim of Function.Function()</summary>
+        </member>
+        <member name="T:i_Shit_Core.Core.Function.Fakes.StubFunction">
+            <summary>Stub type of i_Shit_Core.Core.Function.Function</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Function.Fakes.StubFunction.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Function.Fakes.StubFunction.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Function.Fakes.StubFunction.InitializeStub">
+            <summary>Initializes a new instance of type StubFunction</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Function.Fakes.StubFunction.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Function.Fakes.StubFunction.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:i_Shit_Core.Core.Functions.Fakes.ShimFunction">
+            <summary>Shim type of i_Shit_Core.Core.Functions.Function</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Functions.Fakes.ShimFunction.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Functions.Fakes.ShimFunction.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:i_Shit_Core.Core.Functions.Fakes.ShimFunction.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Hand_CloseByte">
+            <summary>Sets the shim of Function.Hand_Close(Byte _distance)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Hand_GoDownInt32">
+            <summary>Sets the shim of Function.Hand_GoDown(Int32 _distance)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Hand_GoUpInt32">
+            <summary>Sets the shim of Function.Hand_GoUp(Int32 _distance)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Hand_Init">
+            <summary>Sets the shim of Function.Hand_Init()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Hand_OpenByte">
+            <summary>Sets the shim of Function.Hand_Open(Byte _distance)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Hand_SetRotationPositionByte">
+            <summary>Sets the shim of Function.Hand_SetRotationPosition(Byte _position)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Location_DeleteLocationInfoByNameString">
+            <summary>Sets the shim of Function.Location_DeleteLocationInfoByName(String name)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Location_GetCurrectLocationFromRos">
+            <summary>Sets the shim of Function.Location_GetCurrectLocationFromRos()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Location_GetLocationInfoByNameString">
+            <summary>Sets the shim of Function.Location_GetLocationInfoByName(String name)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Location_GetRelativeLocationInfoSingleSingleSingle">
+            <summary>Sets the shim of Function.Location_GetRelativeLocationInfo(Single X, Single Y, Single Angle)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Location_UpdateLocationInfoLocationInfo">
+            <summary>Sets the shim of Function.Location_UpdateLocationInfo(LocationInfo li)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Move_DistanceSingleSingleSingle">
+            <summary>Sets the shim of Function.Move_Distance(Single forwardDistance, Single rightDistance, Single rotateAngle)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Move_NavigateLocationInfo">
+            <summary>Sets the shim of Function.Move_Navigate(LocationInfo targetLocation)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Move_SetSpeedSingleSingleSingle">
+            <summary>Sets the shim of Function.Move_SetSpeed(Single forwardSpeed, Single rightSpeed, Single rotateSpeed)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Speech_Recognize_StartSimpleRecognizeArrayList">
+            <summary>Sets the shim of Function.Speech_Recognize_StartSimpleRecognize(ArrayList _commandsStringsList)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Speech_TTSStringBoolean">
+            <summary>Sets the shim of Function.Speech_TTS(String _whatYouWantToSay, Boolean _isWaitingFinished)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.StaticConstructor">
+            <summary>Sets the shim of Function.Function()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Test_Paaa">
+            <summary>Sets the shim of Function.Test_Paaa()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Vision_FaceDetect">
+            <summary>Sets the shim of Function.Vision_FaceDetect()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Vision_GetCameraSpacePointColorSpacePoint">
+            <summary>Sets the shim of Function.Vision_GetCameraSpacePoint(ColorSpacePoint colorSpacePoint)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Core.Functions.Fakes.ShimFunction.Vision_Kinect_Shot">
+            <summary>Sets the shim of Function.Vision_Kinect_Shot()</summary>
+        </member>
+        <member name="T:i_Shit_Core.Fakes.ShimCoreWindow">
+            <summary>Shim type of i_Shit_Core.CoreWindow</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.ShimCoreWindow.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.ShimCoreWindow.#ctor(i_Shit_Core.CoreWindow)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:i_Shit_Core.Fakes.ShimCoreWindow.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.ShimCoreWindow.AllInstances.CoreWindow_FormClosedObjectFormClosedEventArgs">
+            <summary>Sets the shim of CoreWindow.CoreWindow_FormClosed(Object sender, FormClosedEventArgs e)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.ShimCoreWindow.AllInstances.CoreWindow_LoadObjectEventArgs">
+            <summary>Sets the shim of CoreWindow.CoreWindow_Load(Object sender, EventArgs e)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.ShimCoreWindow.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of CoreWindow.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.ShimCoreWindow.AllInstances.InitializeComponent">
+            <summary>Sets the shim of CoreWindow.InitializeComponent()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.ShimCoreWindow.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.ShimCoreWindow.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.ShimCoreWindow.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.ShimCoreWindow.Bind(System.ComponentModel.IComponent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.ShimCoreWindow.Bind(System.ComponentModel.ISynchronizeInvoke)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.ShimCoreWindow.Bind(System.Windows.Forms.IBindableComponent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.ShimCoreWindow.Bind(System.Windows.Forms.IContainerControl)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.ShimCoreWindow.Bind(System.Windows.Forms.IDropTarget)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.ShimCoreWindow.Bind(System.Windows.Forms.IWin32Window)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.ShimCoreWindow.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.ShimCoreWindow.Constructor">
+            <summary>Sets the shim of CoreWindow.CoreWindow()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.ShimCoreWindow.CoreWindow_FormClosedObjectFormClosedEventArgs">
+            <summary>Sets the shim of CoreWindow.CoreWindow_FormClosed(Object sender, FormClosedEventArgs e)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.ShimCoreWindow.CoreWindow_LoadObjectEventArgs">
+            <summary>Sets the shim of CoreWindow.CoreWindow_Load(Object sender, EventArgs e)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.ShimCoreWindow.DisposeBoolean">
+            <summary>Sets the shim of CoreWindow.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.ShimCoreWindow.InitializeComponent">
+            <summary>Sets the shim of CoreWindow.InitializeComponent()</summary>
+        </member>
+        <member name="T:i_Shit_Core.Fakes.StubCoreWindow">
+            <summary>Stub type of i_Shit_Core.CoreWindow</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AdjustFormScrollbars(System.Boolean)">
+            <summary>Sets the stub of Form.AdjustFormScrollbars(Boolean displayScrollbars)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.AdjustFormScrollbarsBoolean">
+            <summary>Sets the stub of Form.AdjustFormScrollbars(Boolean displayScrollbars)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.AllowDrop">
+            <summary>Sets the stub of Control.get_AllowDrop()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.AllowDropGet">
+            <summary>Sets the stub of Control.get_AllowDrop()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.AllowDropSetBoolean">
+            <summary>Sets the stub of Control.set_AllowDrop(Boolean value)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.Anchor">
+            <summary>Sets the stub of Control.get_Anchor()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.AnchorGet">
+            <summary>Sets the stub of Control.get_Anchor()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.AnchorSetAnchorStyles">
+            <summary>Sets the stub of Control.set_Anchor(AnchorStyles value)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToAllowDrop">
+            <summary>Attaches delegates to emulate StubCoreWindow.AllowDrop as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToAnchor">
+            <summary>Attaches delegates to emulate StubCoreWindow.Anchor as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToAutoScaleBaseSize">
+            <summary>Attaches delegates to emulate StubCoreWindow.AutoScaleBaseSize as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToAutoScroll">
+            <summary>Attaches delegates to emulate StubCoreWindow.AutoScroll as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToAutoScrollOffset">
+            <summary>Attaches delegates to emulate StubCoreWindow.AutoScrollOffset as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToAutoSize">
+            <summary>Attaches delegates to emulate StubCoreWindow.AutoSize as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToAutoValidate">
+            <summary>Attaches delegates to emulate StubCoreWindow.AutoValidate as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToBackColor">
+            <summary>Attaches delegates to emulate StubCoreWindow.BackColor as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToBackgroundImage">
+            <summary>Attaches delegates to emulate StubCoreWindow.BackgroundImage as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToBackgroundImageLayout">
+            <summary>Attaches delegates to emulate StubCoreWindow.BackgroundImageLayout as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToBindingContext">
+            <summary>Attaches delegates to emulate StubCoreWindow.BindingContext as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToContextMenu">
+            <summary>Attaches delegates to emulate StubCoreWindow.ContextMenu as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToContextMenuStrip">
+            <summary>Attaches delegates to emulate StubCoreWindow.ContextMenuStrip as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToCursor">
+            <summary>Attaches delegates to emulate StubCoreWindow.Cursor as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToDock">
+            <summary>Attaches delegates to emulate StubCoreWindow.Dock as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToDoubleBuffered">
+            <summary>Attaches delegates to emulate StubCoreWindow.DoubleBuffered as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToFont">
+            <summary>Attaches delegates to emulate StubCoreWindow.Font as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToForeColor">
+            <summary>Attaches delegates to emulate StubCoreWindow.ForeColor as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToImeModeBase">
+            <summary>Attaches delegates to emulate StubCoreWindow.ImeModeBase as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToMaximumSize">
+            <summary>Attaches delegates to emulate StubCoreWindow.MaximumSize as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToMinimumSize">
+            <summary>Attaches delegates to emulate StubCoreWindow.MinimumSize as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToRightToLeft">
+            <summary>Attaches delegates to emulate StubCoreWindow.RightToLeft as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToRightToLeftLayout">
+            <summary>Attaches delegates to emulate StubCoreWindow.RightToLeftLayout as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToSite">
+            <summary>Attaches delegates to emulate StubCoreWindow.Site as a property with a backing field.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.AttachBackingFieldToText">
+            <summary>Attaches delegates to emulate StubCoreWindow.Text as a property with a backing field.</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.AutoScaleBaseSize">
+            <summary>Sets the stub of Form.get_AutoScaleBaseSize()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.AutoScaleBaseSizeGet">
+            <summary>Sets the stub of Form.get_AutoScaleBaseSize()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.AutoScaleBaseSizeSetSize">
+            <summary>Sets the stub of Form.set_AutoScaleBaseSize(Size value)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.AutoScroll">
+            <summary>Sets the stub of Form.get_AutoScroll()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.AutoScrollGet">
+            <summary>Sets the stub of Form.get_AutoScroll()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.AutoScrollOffset">
+            <summary>Sets the stub of Control.get_AutoScrollOffset()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.AutoScrollOffsetGet">
+            <summary>Sets the stub of Control.get_AutoScrollOffset()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.AutoScrollOffsetSetPoint">
+            <summary>Sets the stub of Control.set_AutoScrollOffset(Point value)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.AutoScrollSetBoolean">
+            <summary>Sets the stub of Form.set_AutoScroll(Boolean value)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.AutoSize">
+            <summary>Sets the stub of Form.get_AutoSize()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.AutoSizeGet">
+            <summary>Sets the stub of Form.get_AutoSize()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.AutoSizeSetBoolean">
+            <summary>Sets the stub of Form.set_AutoSize(Boolean value)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.AutoValidate">
+            <summary>Sets the stub of Form.get_AutoValidate()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.AutoValidateGet">
+            <summary>Sets the stub of Form.get_AutoValidate()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.AutoValidateSetAutoValidate">
+            <summary>Sets the stub of Form.set_AutoValidate(AutoValidate value)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.BackColor">
+            <summary>Sets the stub of Form.get_BackColor()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.BackColorGet">
+            <summary>Sets the stub of Form.get_BackColor()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.BackColorSetColor">
+            <summary>Sets the stub of Form.set_BackColor(Color value)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.BackgroundImage">
+            <summary>Sets the stub of Control.get_BackgroundImage()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.BackgroundImageGet">
+            <summary>Sets the stub of Control.get_BackgroundImage()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.BackgroundImageLayout">
+            <summary>Sets the stub of Control.get_BackgroundImageLayout()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.BackgroundImageLayoutGet">
+            <summary>Sets the stub of Control.get_BackgroundImageLayout()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.BackgroundImageLayoutSetImageLayout">
+            <summary>Sets the stub of Control.set_BackgroundImageLayout(ImageLayout value)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.BackgroundImageSetImage">
+            <summary>Sets the stub of Control.set_BackgroundImage(Image value)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.BindingContext">
+            <summary>Sets the stub of ContainerControl.get_BindingContext()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.BindingContextGet">
+            <summary>Sets the stub of ContainerControl.get_BindingContext()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.BindingContextSetBindingContext">
+            <summary>Sets the stub of ContainerControl.set_BindingContext(BindingContext value)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.CanEnableIme">
+            <summary>Sets the stub of ContainerControl.get_CanEnableIme()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.CanEnableImeGet">
+            <summary>Sets the stub of ContainerControl.get_CanEnableIme()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.CanRaiseEvents">
+            <summary>Sets the stub of Control.get_CanRaiseEvents()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.CanRaiseEventsGet">
+            <summary>Sets the stub of Control.get_CanRaiseEvents()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.ContextMenu">
+            <summary>Sets the stub of Control.get_ContextMenu()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ContextMenuGet">
+            <summary>Sets the stub of Control.get_ContextMenu()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ContextMenuSetContextMenu">
+            <summary>Sets the stub of Control.set_ContextMenu(ContextMenu value)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.ContextMenuStrip">
+            <summary>Sets the stub of Control.get_ContextMenuStrip()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ContextMenuStripGet">
+            <summary>Sets the stub of Control.get_ContextMenuStrip()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ContextMenuStripSetContextMenuStrip">
+            <summary>Sets the stub of Control.set_ContextMenuStrip(ContextMenuStrip value)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.CreateAccessibilityInstance">
+            <summary>Sets the stub of Control.CreateAccessibilityInstance()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.CreateAccessibilityInstance01">
+            <summary>Sets the stub of Control.CreateAccessibilityInstance()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.CreateControlsInstance">
+            <summary>Sets the stub of Form.CreateControlsInstance()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.CreateControlsInstance01">
+            <summary>Sets the stub of Form.CreateControlsInstance()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.CreateHandle">
+            <summary>Sets the stub of Form.CreateHandle()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.CreateHandle01">
+            <summary>Sets the stub of Form.CreateHandle()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.CreateParams">
+            <summary>Sets the stub of Form.get_CreateParams()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.CreateParamsGet">
+            <summary>Sets the stub of Form.get_CreateParams()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.Cursor">
+            <summary>Sets the stub of Control.get_Cursor()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.CursorGet">
+            <summary>Sets the stub of Control.get_Cursor()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.CursorSetCursor">
+            <summary>Sets the stub of Control.set_Cursor(Cursor value)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.DefWndProc(System.Windows.Forms.Message@)">
+            <summary>Sets the stub of Form.DefWndProc(Message&amp; m)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.DefWndProcMessageRef">
+            <summary>Sets the stub of Form.DefWndProc(Message&amp; m)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.DefaultCursor">
+            <summary>Sets the stub of Control.get_DefaultCursor()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.DefaultCursorGet">
+            <summary>Sets the stub of Control.get_DefaultCursor()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.DefaultImeMode">
+            <summary>Sets the stub of Form.get_DefaultImeMode()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.DefaultImeModeGet">
+            <summary>Sets the stub of Form.get_DefaultImeMode()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.DefaultMargin">
+            <summary>Sets the stub of Control.get_DefaultMargin()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.DefaultMarginGet">
+            <summary>Sets the stub of Control.get_DefaultMargin()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.DefaultMaximumSize">
+            <summary>Sets the stub of Control.get_DefaultMaximumSize()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.DefaultMaximumSizeGet">
+            <summary>Sets the stub of Control.get_DefaultMaximumSize()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.DefaultMinimumSize">
+            <summary>Sets the stub of Control.get_DefaultMinimumSize()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.DefaultMinimumSizeGet">
+            <summary>Sets the stub of Control.get_DefaultMinimumSize()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.DefaultPadding">
+            <summary>Sets the stub of Control.get_DefaultPadding()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.DefaultPaddingGet">
+            <summary>Sets the stub of Control.get_DefaultPadding()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.DefaultSize">
+            <summary>Sets the stub of Form.get_DefaultSize()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.DefaultSizeGet">
+            <summary>Sets the stub of Form.get_DefaultSize()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.DestroyHandle">
+            <summary>Sets the stub of Control.DestroyHandle()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.DestroyHandle01">
+            <summary>Sets the stub of Control.DestroyHandle()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.DisplayRectangle">
+            <summary>Sets the stub of ScrollableControl.get_DisplayRectangle()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.DisplayRectangleGet">
+            <summary>Sets the stub of ScrollableControl.get_DisplayRectangle()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.Dispose(System.Boolean)">
+            <summary>Sets the stub of CoreWindow.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.DisposeBoolean">
+            <summary>Sets the stub of CoreWindow.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.Dock">
+            <summary>Sets the stub of Control.get_Dock()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.DockGet">
+            <summary>Sets the stub of Control.get_Dock()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.DockSetDockStyle">
+            <summary>Sets the stub of Control.set_Dock(DockStyle value)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.DoubleBuffered">
+            <summary>Sets the stub of Control.get_DoubleBuffered()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.DoubleBufferedGet">
+            <summary>Sets the stub of Control.get_DoubleBuffered()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.DoubleBufferedSetBoolean">
+            <summary>Sets the stub of Control.set_DoubleBuffered(Boolean value)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.Focused">
+            <summary>Sets the stub of Control.get_Focused()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.FocusedGet">
+            <summary>Sets the stub of Control.get_Focused()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.Font">
+            <summary>Sets the stub of Control.get_Font()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.FontGet">
+            <summary>Sets the stub of Control.get_Font()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.FontSetFont">
+            <summary>Sets the stub of Control.set_Font(Font value)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.ForeColor">
+            <summary>Sets the stub of Control.get_ForeColor()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ForeColorGet">
+            <summary>Sets the stub of Control.get_ForeColor()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ForeColorSetColor">
+            <summary>Sets the stub of Control.set_ForeColor(Color value)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.GetAccessibilityObjectById(System.Int32)">
+            <summary>Sets the stub of Control.GetAccessibilityObjectById(Int32 objectId)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.GetAccessibilityObjectByIdInt32">
+            <summary>Sets the stub of Control.GetAccessibilityObjectById(Int32 objectId)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.GetPreferredSize(System.Drawing.Size)">
+            <summary>Sets the stub of Control.GetPreferredSize(Size proposedSize)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.GetPreferredSizeSize">
+            <summary>Sets the stub of Control.GetPreferredSize(Size proposedSize)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.GetScaledBounds(System.Drawing.Rectangle,System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)">
+            <summary>Sets the stub of Form.GetScaledBounds(Rectangle bounds, SizeF factor, BoundsSpecified specified)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.GetScaledBoundsRectangleSizeFBoundsSpecified">
+            <summary>Sets the stub of Form.GetScaledBounds(Rectangle bounds, SizeF factor, BoundsSpecified specified)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.GetService(System.Type)">
+            <summary>Sets the stub of Component.GetService(Type service)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.GetServiceType">
+            <summary>Sets the stub of Component.GetService(Type service)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.ImeModeBase">
+            <summary>Sets the stub of Control.get_ImeModeBase()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ImeModeBaseGet">
+            <summary>Sets the stub of Control.get_ImeModeBase()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ImeModeBaseSetImeMode">
+            <summary>Sets the stub of Control.set_ImeModeBase(ImeMode value)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.InitLayout">
+            <summary>Sets the stub of Control.InitLayout()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.InitLayout01">
+            <summary>Sets the stub of Control.InitLayout()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.InitializeStub">
+            <summary>Initializes a new instance of type StubCoreWindow</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.IsInputChar(System.Char)">
+            <summary>Sets the stub of Control.IsInputChar(Char charCode)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.IsInputCharChar">
+            <summary>Sets the stub of Control.IsInputChar(Char charCode)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.IsInputKey(System.Windows.Forms.Keys)">
+            <summary>Sets the stub of Control.IsInputKey(Keys keyData)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.IsInputKeyKeys">
+            <summary>Sets the stub of Control.IsInputKey(Keys keyData)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.LayoutEngine">
+            <summary>Sets the stub of Control.get_LayoutEngine()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.LayoutEngineGet">
+            <summary>Sets the stub of Control.get_LayoutEngine()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.MaximumSize">
+            <summary>Sets the stub of Form.get_MaximumSize()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.MaximumSizeGet">
+            <summary>Sets the stub of Form.get_MaximumSize()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.MaximumSizeSetSize">
+            <summary>Sets the stub of Form.set_MaximumSize(Size value)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.MinimumSize">
+            <summary>Sets the stub of Form.get_MinimumSize()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.MinimumSizeGet">
+            <summary>Sets the stub of Form.get_MinimumSize()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.MinimumSizeSetSize">
+            <summary>Sets the stub of Form.set_MinimumSize(Size value)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.NotifyInvalidate(System.Drawing.Rectangle)">
+            <summary>Sets the stub of Control.NotifyInvalidate(Rectangle invalidatedArea)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.NotifyInvalidateRectangle">
+            <summary>Sets the stub of Control.NotifyInvalidate(Rectangle invalidatedArea)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnActivated(System.EventArgs)">
+            <summary>Sets the stub of Form.OnActivated(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnActivatedEventArgs">
+            <summary>Sets the stub of Form.OnActivated(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnAutoSizeChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnAutoSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnAutoSizeChangedEventArgs">
+            <summary>Sets the stub of Control.OnAutoSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnAutoValidateChanged(System.EventArgs)">
+            <summary>Sets the stub of ContainerControl.OnAutoValidateChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnAutoValidateChangedEventArgs">
+            <summary>Sets the stub of ContainerControl.OnAutoValidateChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnBackColorChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnBackColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnBackColorChangedEventArgs">
+            <summary>Sets the stub of Control.OnBackColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnBackgroundImageChanged(System.EventArgs)">
+            <summary>Sets the stub of Form.OnBackgroundImageChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnBackgroundImageChangedEventArgs">
+            <summary>Sets the stub of Form.OnBackgroundImageChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnBackgroundImageLayoutChanged(System.EventArgs)">
+            <summary>Sets the stub of Form.OnBackgroundImageLayoutChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnBackgroundImageLayoutChangedEventArgs">
+            <summary>Sets the stub of Form.OnBackgroundImageLayoutChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnBindingContextChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnBindingContextChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnBindingContextChangedEventArgs">
+            <summary>Sets the stub of Control.OnBindingContextChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnCausesValidationChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnCausesValidationChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnCausesValidationChangedEventArgs">
+            <summary>Sets the stub of Control.OnCausesValidationChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnChangeUICues(System.Windows.Forms.UICuesEventArgs)">
+            <summary>Sets the stub of Control.OnChangeUICues(UICuesEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnChangeUICuesUICuesEventArgs">
+            <summary>Sets the stub of Control.OnChangeUICues(UICuesEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnClick(System.EventArgs)">
+            <summary>Sets the stub of Control.OnClick(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnClickEventArgs">
+            <summary>Sets the stub of Control.OnClick(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnClientSizeChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnClientSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnClientSizeChangedEventArgs">
+            <summary>Sets the stub of Control.OnClientSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnClosed(System.EventArgs)">
+            <summary>Sets the stub of Form.OnClosed(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnClosedEventArgs">
+            <summary>Sets the stub of Form.OnClosed(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnClosing(System.ComponentModel.CancelEventArgs)">
+            <summary>Sets the stub of Form.OnClosing(CancelEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnClosingCancelEventArgs">
+            <summary>Sets the stub of Form.OnClosing(CancelEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnContextMenuChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnContextMenuChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnContextMenuChangedEventArgs">
+            <summary>Sets the stub of Control.OnContextMenuChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnContextMenuStripChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnContextMenuStripChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnContextMenuStripChangedEventArgs">
+            <summary>Sets the stub of Control.OnContextMenuStripChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnControlAdded(System.Windows.Forms.ControlEventArgs)">
+            <summary>Sets the stub of Control.OnControlAdded(ControlEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnControlAddedControlEventArgs">
+            <summary>Sets the stub of Control.OnControlAdded(ControlEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnControlRemoved(System.Windows.Forms.ControlEventArgs)">
+            <summary>Sets the stub of Control.OnControlRemoved(ControlEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnControlRemovedControlEventArgs">
+            <summary>Sets the stub of Control.OnControlRemoved(ControlEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnCreateControl">
+            <summary>Sets the stub of Form.OnCreateControl()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnCreateControl01">
+            <summary>Sets the stub of Form.OnCreateControl()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnCursorChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnCursorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnCursorChangedEventArgs">
+            <summary>Sets the stub of Control.OnCursorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnDeactivate(System.EventArgs)">
+            <summary>Sets the stub of Form.OnDeactivate(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnDeactivateEventArgs">
+            <summary>Sets the stub of Form.OnDeactivate(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnDockChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnDockChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnDockChangedEventArgs">
+            <summary>Sets the stub of Control.OnDockChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnDoubleClick(System.EventArgs)">
+            <summary>Sets the stub of Control.OnDoubleClick(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnDoubleClickEventArgs">
+            <summary>Sets the stub of Control.OnDoubleClick(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnDragDrop(System.Windows.Forms.DragEventArgs)">
+            <summary>Sets the stub of Control.OnDragDrop(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnDragDropDragEventArgs">
+            <summary>Sets the stub of Control.OnDragDrop(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnDragEnter(System.Windows.Forms.DragEventArgs)">
+            <summary>Sets the stub of Control.OnDragEnter(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnDragEnterDragEventArgs">
+            <summary>Sets the stub of Control.OnDragEnter(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnDragLeave(System.EventArgs)">
+            <summary>Sets the stub of Control.OnDragLeave(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnDragLeaveEventArgs">
+            <summary>Sets the stub of Control.OnDragLeave(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnDragOver(System.Windows.Forms.DragEventArgs)">
+            <summary>Sets the stub of Control.OnDragOver(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnDragOverDragEventArgs">
+            <summary>Sets the stub of Control.OnDragOver(DragEventArgs drgevent)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnEnabledChanged(System.EventArgs)">
+            <summary>Sets the stub of Form.OnEnabledChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnEnabledChangedEventArgs">
+            <summary>Sets the stub of Form.OnEnabledChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnEnter(System.EventArgs)">
+            <summary>Sets the stub of Form.OnEnter(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnEnterEventArgs">
+            <summary>Sets the stub of Form.OnEnter(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnFontChanged(System.EventArgs)">
+            <summary>Sets the stub of Form.OnFontChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnFontChangedEventArgs">
+            <summary>Sets the stub of Form.OnFontChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnForeColorChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnForeColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnForeColorChangedEventArgs">
+            <summary>Sets the stub of Control.OnForeColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnFormClosed(System.Windows.Forms.FormClosedEventArgs)">
+            <summary>Sets the stub of Form.OnFormClosed(FormClosedEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnFormClosedFormClosedEventArgs">
+            <summary>Sets the stub of Form.OnFormClosed(FormClosedEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnFormClosing(System.Windows.Forms.FormClosingEventArgs)">
+            <summary>Sets the stub of Form.OnFormClosing(FormClosingEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnFormClosingFormClosingEventArgs">
+            <summary>Sets the stub of Form.OnFormClosing(FormClosingEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)">
+            <summary>Sets the stub of Control.OnGiveFeedback(GiveFeedbackEventArgs gfbevent)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnGiveFeedbackGiveFeedbackEventArgs">
+            <summary>Sets the stub of Control.OnGiveFeedback(GiveFeedbackEventArgs gfbevent)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnGotFocus(System.EventArgs)">
+            <summary>Sets the stub of Control.OnGotFocus(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnGotFocusEventArgs">
+            <summary>Sets the stub of Control.OnGotFocus(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnHandleCreated(System.EventArgs)">
+            <summary>Sets the stub of Form.OnHandleCreated(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnHandleCreatedEventArgs">
+            <summary>Sets the stub of Form.OnHandleCreated(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnHandleDestroyed(System.EventArgs)">
+            <summary>Sets the stub of Form.OnHandleDestroyed(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnHandleDestroyedEventArgs">
+            <summary>Sets the stub of Form.OnHandleDestroyed(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnHelpButtonClicked(System.ComponentModel.CancelEventArgs)">
+            <summary>Sets the stub of Form.OnHelpButtonClicked(CancelEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnHelpButtonClickedCancelEventArgs">
+            <summary>Sets the stub of Form.OnHelpButtonClicked(CancelEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnHelpRequested(System.Windows.Forms.HelpEventArgs)">
+            <summary>Sets the stub of Control.OnHelpRequested(HelpEventArgs hevent)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnHelpRequestedHelpEventArgs">
+            <summary>Sets the stub of Control.OnHelpRequested(HelpEventArgs hevent)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnImeModeChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnImeModeChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnImeModeChangedEventArgs">
+            <summary>Sets the stub of Control.OnImeModeChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnInputLanguageChanged(System.Windows.Forms.InputLanguageChangedEventArgs)">
+            <summary>Sets the stub of Form.OnInputLanguageChanged(InputLanguageChangedEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnInputLanguageChangedInputLanguageChangedEventArgs">
+            <summary>Sets the stub of Form.OnInputLanguageChanged(InputLanguageChangedEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnInputLanguageChanging(System.Windows.Forms.InputLanguageChangingEventArgs)">
+            <summary>Sets the stub of Form.OnInputLanguageChanging(InputLanguageChangingEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnInputLanguageChangingInputLanguageChangingEventArgs">
+            <summary>Sets the stub of Form.OnInputLanguageChanging(InputLanguageChangingEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnInvalidated(System.Windows.Forms.InvalidateEventArgs)">
+            <summary>Sets the stub of Control.OnInvalidated(InvalidateEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnInvalidatedInvalidateEventArgs">
+            <summary>Sets the stub of Control.OnInvalidated(InvalidateEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>Sets the stub of Control.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnKeyDownKeyEventArgs">
+            <summary>Sets the stub of Control.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)">
+            <summary>Sets the stub of Control.OnKeyPress(KeyPressEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnKeyPressKeyPressEventArgs">
+            <summary>Sets the stub of Control.OnKeyPress(KeyPressEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnKeyUp(System.Windows.Forms.KeyEventArgs)">
+            <summary>Sets the stub of Control.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnKeyUpKeyEventArgs">
+            <summary>Sets the stub of Control.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnLayout(System.Windows.Forms.LayoutEventArgs)">
+            <summary>Sets the stub of Form.OnLayout(LayoutEventArgs levent)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnLayoutLayoutEventArgs">
+            <summary>Sets the stub of Form.OnLayout(LayoutEventArgs levent)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnLeave(System.EventArgs)">
+            <summary>Sets the stub of Control.OnLeave(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnLeaveEventArgs">
+            <summary>Sets the stub of Control.OnLeave(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnLoad(System.EventArgs)">
+            <summary>Sets the stub of Form.OnLoad(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnLoadEventArgs">
+            <summary>Sets the stub of Form.OnLoad(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnLocationChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnLocationChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnLocationChangedEventArgs">
+            <summary>Sets the stub of Control.OnLocationChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnLostFocus(System.EventArgs)">
+            <summary>Sets the stub of Control.OnLostFocus(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnLostFocusEventArgs">
+            <summary>Sets the stub of Control.OnLostFocus(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMarginChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnMarginChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMarginChangedEventArgs">
+            <summary>Sets the stub of Control.OnMarginChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMaximizedBoundsChanged(System.EventArgs)">
+            <summary>Sets the stub of Form.OnMaximizedBoundsChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMaximizedBoundsChangedEventArgs">
+            <summary>Sets the stub of Form.OnMaximizedBoundsChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMaximumSizeChanged(System.EventArgs)">
+            <summary>Sets the stub of Form.OnMaximumSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMaximumSizeChangedEventArgs">
+            <summary>Sets the stub of Form.OnMaximumSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMdiChildActivate(System.EventArgs)">
+            <summary>Sets the stub of Form.OnMdiChildActivate(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMdiChildActivateEventArgs">
+            <summary>Sets the stub of Form.OnMdiChildActivate(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMenuComplete(System.EventArgs)">
+            <summary>Sets the stub of Form.OnMenuComplete(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMenuCompleteEventArgs">
+            <summary>Sets the stub of Form.OnMenuComplete(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMenuStart(System.EventArgs)">
+            <summary>Sets the stub of Form.OnMenuStart(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMenuStartEventArgs">
+            <summary>Sets the stub of Form.OnMenuStart(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMinimumSizeChanged(System.EventArgs)">
+            <summary>Sets the stub of Form.OnMinimumSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMinimumSizeChangedEventArgs">
+            <summary>Sets the stub of Form.OnMinimumSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMouseCaptureChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnMouseCaptureChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMouseCaptureChangedEventArgs">
+            <summary>Sets the stub of Control.OnMouseCaptureChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMouseClick(System.Windows.Forms.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnMouseClick(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMouseClickMouseEventArgs">
+            <summary>Sets the stub of Control.OnMouseClick(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnMouseDoubleClick(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMouseDoubleClickMouseEventArgs">
+            <summary>Sets the stub of Control.OnMouseDoubleClick(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnMouseDown(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMouseDownMouseEventArgs">
+            <summary>Sets the stub of Control.OnMouseDown(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMouseEnter(System.EventArgs)">
+            <summary>Sets the stub of Control.OnMouseEnter(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMouseEnterEventArgs">
+            <summary>Sets the stub of Control.OnMouseEnter(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMouseHover(System.EventArgs)">
+            <summary>Sets the stub of Control.OnMouseHover(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMouseHoverEventArgs">
+            <summary>Sets the stub of Control.OnMouseHover(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMouseLeave(System.EventArgs)">
+            <summary>Sets the stub of Control.OnMouseLeave(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMouseLeaveEventArgs">
+            <summary>Sets the stub of Control.OnMouseLeave(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMouseMoveMouseEventArgs">
+            <summary>Sets the stub of Control.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnMouseUp(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMouseUpMouseEventArgs">
+            <summary>Sets the stub of Control.OnMouseUp(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMouseWheel(System.Windows.Forms.MouseEventArgs)">
+            <summary>Sets the stub of ScrollableControl.OnMouseWheel(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMouseWheelMouseEventArgs">
+            <summary>Sets the stub of ScrollableControl.OnMouseWheel(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnMove(System.EventArgs)">
+            <summary>Sets the stub of Control.OnMove(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnMoveEventArgs">
+            <summary>Sets the stub of Control.OnMove(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnNotifyMessage(System.Windows.Forms.Message)">
+            <summary>Sets the stub of Control.OnNotifyMessage(Message m)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnNotifyMessageMessage">
+            <summary>Sets the stub of Control.OnNotifyMessage(Message m)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnPaddingChanged(System.EventArgs)">
+            <summary>Sets the stub of ScrollableControl.OnPaddingChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnPaddingChangedEventArgs">
+            <summary>Sets the stub of ScrollableControl.OnPaddingChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>Sets the stub of Form.OnPaint(PaintEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>Sets the stub of ScrollableControl.OnPaintBackground(PaintEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnPaintBackgroundPaintEventArgs">
+            <summary>Sets the stub of ScrollableControl.OnPaintBackground(PaintEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnPaintPaintEventArgs">
+            <summary>Sets the stub of Form.OnPaint(PaintEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnParentBackColorChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentBackColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnParentBackColorChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentBackColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnParentBackgroundImageChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentBackgroundImageChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnParentBackgroundImageChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentBackgroundImageChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnParentBindingContextChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentBindingContextChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnParentBindingContextChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentBindingContextChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnParentChanged(System.EventArgs)">
+            <summary>Sets the stub of ContainerControl.OnParentChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnParentChangedEventArgs">
+            <summary>Sets the stub of ContainerControl.OnParentChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnParentCursorChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentCursorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnParentCursorChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentCursorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnParentEnabledChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentEnabledChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnParentEnabledChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentEnabledChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnParentFontChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentFontChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnParentFontChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentFontChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnParentForeColorChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentForeColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnParentForeColorChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentForeColorChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnParentRightToLeftChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentRightToLeftChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnParentRightToLeftChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentRightToLeftChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnParentVisibleChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnParentVisibleChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnParentVisibleChangedEventArgs">
+            <summary>Sets the stub of Control.OnParentVisibleChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnPreviewKeyDown(System.Windows.Forms.PreviewKeyDownEventArgs)">
+            <summary>Sets the stub of Control.OnPreviewKeyDown(PreviewKeyDownEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnPreviewKeyDownPreviewKeyDownEventArgs">
+            <summary>Sets the stub of Control.OnPreviewKeyDown(PreviewKeyDownEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnPrint(System.Windows.Forms.PaintEventArgs)">
+            <summary>Sets the stub of Control.OnPrint(PaintEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnPrintPaintEventArgs">
+            <summary>Sets the stub of Control.OnPrint(PaintEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnQueryContinueDrag(System.Windows.Forms.QueryContinueDragEventArgs)">
+            <summary>Sets the stub of Control.OnQueryContinueDrag(QueryContinueDragEventArgs qcdevent)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnQueryContinueDragQueryContinueDragEventArgs">
+            <summary>Sets the stub of Control.OnQueryContinueDrag(QueryContinueDragEventArgs qcdevent)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnRegionChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnRegionChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnRegionChangedEventArgs">
+            <summary>Sets the stub of Control.OnRegionChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnResize(System.EventArgs)">
+            <summary>Sets the stub of Form.OnResize(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnResizeBegin(System.EventArgs)">
+            <summary>Sets the stub of Form.OnResizeBegin(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnResizeBeginEventArgs">
+            <summary>Sets the stub of Form.OnResizeBegin(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnResizeEnd(System.EventArgs)">
+            <summary>Sets the stub of Form.OnResizeEnd(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnResizeEndEventArgs">
+            <summary>Sets the stub of Form.OnResizeEnd(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnResizeEventArgs">
+            <summary>Sets the stub of Form.OnResize(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnRightToLeftChanged(System.EventArgs)">
+            <summary>Sets the stub of ScrollableControl.OnRightToLeftChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnRightToLeftChangedEventArgs">
+            <summary>Sets the stub of ScrollableControl.OnRightToLeftChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnRightToLeftLayoutChanged(System.EventArgs)">
+            <summary>Sets the stub of Form.OnRightToLeftLayoutChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnRightToLeftLayoutChangedEventArgs">
+            <summary>Sets the stub of Form.OnRightToLeftLayoutChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnScroll(System.Windows.Forms.ScrollEventArgs)">
+            <summary>Sets the stub of ScrollableControl.OnScroll(ScrollEventArgs se)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnScrollScrollEventArgs">
+            <summary>Sets the stub of ScrollableControl.OnScroll(ScrollEventArgs se)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnShown(System.EventArgs)">
+            <summary>Sets the stub of Form.OnShown(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnShownEventArgs">
+            <summary>Sets the stub of Form.OnShown(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnSizeChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnSizeChangedEventArgs">
+            <summary>Sets the stub of Control.OnSizeChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnStyleChanged(System.EventArgs)">
+            <summary>Sets the stub of Form.OnStyleChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnStyleChangedEventArgs">
+            <summary>Sets the stub of Form.OnStyleChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnSystemColorsChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnSystemColorsChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnSystemColorsChangedEventArgs">
+            <summary>Sets the stub of Control.OnSystemColorsChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnTabIndexChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnTabIndexChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnTabIndexChangedEventArgs">
+            <summary>Sets the stub of Control.OnTabIndexChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnTabStopChanged(System.EventArgs)">
+            <summary>Sets the stub of Control.OnTabStopChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnTabStopChangedEventArgs">
+            <summary>Sets the stub of Control.OnTabStopChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnTextChanged(System.EventArgs)">
+            <summary>Sets the stub of Form.OnTextChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnTextChangedEventArgs">
+            <summary>Sets the stub of Form.OnTextChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnValidated(System.EventArgs)">
+            <summary>Sets the stub of Control.OnValidated(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnValidatedEventArgs">
+            <summary>Sets the stub of Control.OnValidated(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnValidating(System.ComponentModel.CancelEventArgs)">
+            <summary>Sets the stub of Control.OnValidating(CancelEventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnValidatingCancelEventArgs">
+            <summary>Sets the stub of Control.OnValidating(CancelEventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.OnVisibleChanged(System.EventArgs)">
+            <summary>Sets the stub of Form.OnVisibleChanged(EventArgs e)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.OnVisibleChangedEventArgs">
+            <summary>Sets the stub of Form.OnVisibleChanged(EventArgs e)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.PreProcessMessage(System.Windows.Forms.Message@)">
+            <summary>Sets the stub of Control.PreProcessMessage(Message&amp; msg)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.PreProcessMessageMessageRef">
+            <summary>Sets the stub of Control.PreProcessMessage(Message&amp; msg)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>Sets the stub of Form.ProcessCmdKey(Message&amp; msg, Keys keyData)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ProcessCmdKeyMessageRefKeys">
+            <summary>Sets the stub of Form.ProcessCmdKey(Message&amp; msg, Keys keyData)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ProcessDialogChar(System.Char)">
+            <summary>Sets the stub of Form.ProcessDialogChar(Char charCode)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ProcessDialogCharChar">
+            <summary>Sets the stub of Form.ProcessDialogChar(Char charCode)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>Sets the stub of Form.ProcessDialogKey(Keys keyData)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ProcessDialogKeyKeys">
+            <summary>Sets the stub of Form.ProcessDialogKey(Keys keyData)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ProcessKeyEventArgs(System.Windows.Forms.Message@)">
+            <summary>Sets the stub of Control.ProcessKeyEventArgs(Message&amp; m)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ProcessKeyEventArgsMessageRef">
+            <summary>Sets the stub of Control.ProcessKeyEventArgs(Message&amp; m)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ProcessKeyMessage(System.Windows.Forms.Message@)">
+            <summary>Sets the stub of Control.ProcessKeyMessage(Message&amp; m)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ProcessKeyMessageMessageRef">
+            <summary>Sets the stub of Control.ProcessKeyMessage(Message&amp; m)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ProcessKeyPreview(System.Windows.Forms.Message@)">
+            <summary>Sets the stub of Form.ProcessKeyPreview(Message&amp; m)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ProcessKeyPreviewMessageRef">
+            <summary>Sets the stub of Form.ProcessKeyPreview(Message&amp; m)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ProcessMnemonic(System.Char)">
+            <summary>Sets the stub of Form.ProcessMnemonic(Char charCode)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ProcessMnemonicChar">
+            <summary>Sets the stub of Form.ProcessMnemonic(Char charCode)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ProcessTabKey(System.Boolean)">
+            <summary>Sets the stub of Form.ProcessTabKey(Boolean forward)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ProcessTabKeyBoolean">
+            <summary>Sets the stub of Form.ProcessTabKey(Boolean forward)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.Refresh">
+            <summary>Sets the stub of Control.Refresh()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.Refresh01">
+            <summary>Sets the stub of Control.Refresh()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ResetBackColor">
+            <summary>Sets the stub of Control.ResetBackColor()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ResetBackColor01">
+            <summary>Sets the stub of Control.ResetBackColor()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ResetCursor">
+            <summary>Sets the stub of Control.ResetCursor()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ResetCursor01">
+            <summary>Sets the stub of Control.ResetCursor()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ResetFont">
+            <summary>Sets the stub of Control.ResetFont()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ResetFont01">
+            <summary>Sets the stub of Control.ResetFont()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ResetForeColor">
+            <summary>Sets the stub of Control.ResetForeColor()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ResetForeColor01">
+            <summary>Sets the stub of Control.ResetForeColor()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ResetRightToLeft">
+            <summary>Sets the stub of Control.ResetRightToLeft()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ResetRightToLeft01">
+            <summary>Sets the stub of Control.ResetRightToLeft()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ResetText">
+            <summary>Sets the stub of Control.ResetText()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ResetText01">
+            <summary>Sets the stub of Control.ResetText()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.RightToLeft">
+            <summary>Sets the stub of Control.get_RightToLeft()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.RightToLeftGet">
+            <summary>Sets the stub of Control.get_RightToLeft()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.RightToLeftLayout">
+            <summary>Sets the stub of Form.get_RightToLeftLayout()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.RightToLeftLayoutGet">
+            <summary>Sets the stub of Form.get_RightToLeftLayout()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.RightToLeftLayoutSetBoolean">
+            <summary>Sets the stub of Form.set_RightToLeftLayout(Boolean value)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.RightToLeftSetRightToLeft">
+            <summary>Sets the stub of Control.set_RightToLeft(RightToLeft value)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.ScaleChildren">
+            <summary>Sets the stub of Control.get_ScaleChildren()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ScaleChildrenGet">
+            <summary>Sets the stub of Control.get_ScaleChildren()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)">
+            <summary>Sets the stub of Form.ScaleControl(SizeF factor, BoundsSpecified specified)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ScaleControlSizeFBoundsSpecified">
+            <summary>Sets the stub of Form.ScaleControl(SizeF factor, BoundsSpecified specified)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ScaleCore(System.Single,System.Single)">
+            <summary>Sets the stub of Form.ScaleCore(Single x, Single y)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ScaleCoreSingleSingle">
+            <summary>Sets the stub of Form.ScaleCore(Single x, Single y)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ScrollToControl(System.Windows.Forms.Control)">
+            <summary>Sets the stub of ScrollableControl.ScrollToControl(Control activeControl)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ScrollToControlControl">
+            <summary>Sets the stub of ScrollableControl.ScrollToControl(Control activeControl)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.Select(System.Boolean,System.Boolean)">
+            <summary>Sets the stub of Form.Select(Boolean directed, Boolean forward)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.SelectBooleanBoolean">
+            <summary>Sets the stub of Form.Select(Boolean directed, Boolean forward)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
+            <summary>Sets the stub of Form.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.SetBoundsCoreInt32Int32Int32Int32BoundsSpecified">
+            <summary>Sets the stub of Form.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.SetClientSizeCore(System.Int32,System.Int32)">
+            <summary>Sets the stub of Form.SetClientSizeCore(Int32 x, Int32 y)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.SetClientSizeCoreInt32Int32">
+            <summary>Sets the stub of Form.SetClientSizeCore(Int32 x, Int32 y)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.SetVisibleCore(System.Boolean)">
+            <summary>Sets the stub of Form.SetVisibleCore(Boolean value)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.SetVisibleCoreBoolean">
+            <summary>Sets the stub of Form.SetVisibleCore(Boolean value)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.ShowFocusCues">
+            <summary>Sets the stub of Control.get_ShowFocusCues()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ShowFocusCuesGet">
+            <summary>Sets the stub of Control.get_ShowFocusCues()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.ShowKeyboardCues">
+            <summary>Sets the stub of Control.get_ShowKeyboardCues()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ShowKeyboardCuesGet">
+            <summary>Sets the stub of Control.get_ShowKeyboardCues()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.ShowWithoutActivation">
+            <summary>Sets the stub of Form.get_ShowWithoutActivation()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ShowWithoutActivationGet">
+            <summary>Sets the stub of Form.get_ShowWithoutActivation()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.Site">
+            <summary>Sets the stub of Control.get_Site()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.SiteGet">
+            <summary>Sets the stub of Control.get_Site()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.SiteSetISite">
+            <summary>Sets the stub of Control.set_Site(ISite value)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.SizeFromClientSize(System.Drawing.Size)">
+            <summary>Sets the stub of Control.SizeFromClientSize(Size clientSize)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.SizeFromClientSizeSize">
+            <summary>Sets the stub of Control.SizeFromClientSize(Size clientSize)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Fakes.StubCoreWindow.Text">
+            <summary>Sets the stub of Form.get_Text()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.TextGet">
+            <summary>Sets the stub of Form.get_Text()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.TextSetString">
+            <summary>Sets the stub of Form.set_Text(String value)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ToString">
+            <summary>Sets the stub of Form.ToString()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ToString01">
+            <summary>Sets the stub of Form.ToString()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.UpdateDefaultButton">
+            <summary>Sets the stub of Form.UpdateDefaultButton()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.UpdateDefaultButton01">
+            <summary>Sets the stub of Form.UpdateDefaultButton()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ValidateChildren">
+            <summary>Sets the stub of Form.ValidateChildren()</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.ValidateChildren(System.Windows.Forms.ValidationConstraints)">
+            <summary>Sets the stub of Form.ValidateChildren(ValidationConstraints validationConstraints)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ValidateChildren01">
+            <summary>Sets the stub of Form.ValidateChildren()</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.ValidateChildrenValidationConstraints">
+            <summary>Sets the stub of Form.ValidateChildren(ValidationConstraints validationConstraints)</summary>
+        </member>
+        <member name="M:i_Shit_Core.Fakes.StubCoreWindow.WndProc(System.Windows.Forms.Message@)">
+            <summary>Sets the stub of Form.WndProc(Message&amp; m)</summary>
+        </member>
+        <member name="F:i_Shit_Core.Fakes.StubCoreWindow.WndProcMessageRef">
+            <summary>Sets the stub of Form.WndProc(Message&amp; m)</summary>
+        </member>
+        <member name="T:i_Shit_Core.Library.Fakes.ShimFaceInfo">
+            <summary>Shim type of i_Shit_Core.Library.FaceInfo</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.ShimFaceInfo.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.ShimFaceInfo.#ctor(i_Shit_Core.Library.FaceInfo)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:i_Shit_Core.Library.Fakes.ShimFaceInfo.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.ShimFaceInfo.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.ShimFaceInfo.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.ShimFaceInfo.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.ShimFaceInfo.Constructor">
+            <summary>Sets the shim of FaceInfo.FaceInfo()</summary>
+        </member>
+        <member name="T:i_Shit_Core.Library.Fakes.ShimFileOperation">
+            <summary>Shim type of i_Shit_Core.Library.FileOperation</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.ShimFileOperation.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.ShimFileOperation.#ctor(i_Shit_Core.Library.FileOperation)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:i_Shit_Core.Library.Fakes.ShimFileOperation.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.ShimFileOperation.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.ShimFileOperation.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.ShimFileOperation.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.ShimFileOperation.Constructor">
+            <summary>Sets the shim of FileOperation.FileOperation()</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.ShimFileOperation.ReadTXTString">
+            <summary>Sets the shim of FileOperation.ReadTXT(String filename)</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.ShimFileOperation.WriteTXTStringString">
+            <summary>Sets the shim of FileOperation.WriteTXT(String filename, String content)</summary>
+        </member>
+        <member name="T:i_Shit_Core.Library.Fakes.ShimLocationInfo">
+            <summary>Shim type of i_Shit_Core.Library.LocationInfo</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.ShimLocationInfo.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.ShimLocationInfo.#ctor(i_Shit_Core.Library.LocationInfo)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:i_Shit_Core.Library.Fakes.ShimLocationInfo.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.ShimLocationInfo.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.ShimLocationInfo.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.ShimLocationInfo.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.ShimLocationInfo.Constructor">
+            <summary>Sets the shim of LocationInfo.LocationInfo()</summary>
+        </member>
+        <member name="T:i_Shit_Core.Library.Fakes.StubFaceInfo">
+            <summary>Stub type of i_Shit_Core.Library.FaceInfo</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.StubFaceInfo.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.StubFaceInfo.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.StubFaceInfo.InitializeStub">
+            <summary>Initializes a new instance of type StubFaceInfo</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.StubFaceInfo.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.StubFaceInfo.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:i_Shit_Core.Library.Fakes.StubFileOperation">
+            <summary>Stub type of i_Shit_Core.Library.FileOperation</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.StubFileOperation.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.StubFileOperation.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.StubFileOperation.InitializeStub">
+            <summary>Initializes a new instance of type StubFileOperation</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.StubFileOperation.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.StubFileOperation.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:i_Shit_Core.Library.Fakes.StubLocationInfo">
+            <summary>Stub type of i_Shit_Core.Library.LocationInfo</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.StubLocationInfo.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.StubLocationInfo.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:i_Shit_Core.Library.Fakes.StubLocationInfo.InitializeStub">
+            <summary>Initializes a new instance of type StubLocationInfo</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.StubLocationInfo.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:i_Shit_Core.Library.Fakes.StubLocationInfo.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

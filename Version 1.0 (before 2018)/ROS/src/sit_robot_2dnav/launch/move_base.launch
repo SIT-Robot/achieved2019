@@ -1,0 +1,3 @@
+<launch>
+<include file="$(find sit_robot_2dnav)/move_base_config/move_base.xml"/>
+</launch>

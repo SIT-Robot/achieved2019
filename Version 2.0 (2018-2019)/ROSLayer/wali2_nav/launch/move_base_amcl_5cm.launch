@@ -1,0 +1,28 @@
+<launch>
+  <master auto="start"/>
+  <param name="/use_sim_time" value="false"/>
+  
+  <node name="hand_action" pkg="hand_action" type="hand_action" output="screen"/>
+  <node name="hokuyo_node" pkg="hokuyo_node" type="hokuyo_node">
+  <param name="angle_min" type="double" value="-1.047" />
+
+<param name="angle_max" type="double" value="1.047"/>
+  </node>
+  <node name="test" pkg="sit_robot_hub" type="test.py" output="screen"/>
+
+  <node name="robot_states_publish_node" pkg="robot_states_publish" type="robot_states_publish_node" output="screen"/>
+  <node name="MoveToGoal" pkg="movetogoal" type="MoveToGoal" output="screen"/>
+
+  <include file="$(find wali2_nav)/move_base_config/move_base.xml"/>
+
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find wali2_nav)/map/map.pgm 0.05" />
+
+  <include file="$(find wali2_nav)/wali2_robot_configuration/wali2_robot_configuration.xml"/>
+
+  <include file="$(find wali2_nav)/move_base_config/amcl_node.xml"/>  
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find wali2_nav)/single_robot.rviz" />
+  
+  <include file="$(find yocs_velocity_smoother)/launch/standalone.xml"/>
+
+</launch>

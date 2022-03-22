@@ -1,0 +1,21 @@
+﻿<Window x:Class="i_Shit_Core.EmulatorMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:i_Shit_Core"
+        mc:Ignorable="d"
+        Title="i-SHIT Emulator" Height="236" Width="405" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <TabControl HorizontalAlignment="Left" Height="203" VerticalAlignment="Top" Width="395">
+        <TabItem Header="Settings">
+            <Grid Background="#FFE5E5E5" Margin="0,0,2,1">
+                <Grid Margin="0,0,16,10"/>
+                <CheckBox x:Name="bodydetect_checkbox" Content="Emulate BodyDetect" HorizontalAlignment="Left" Margin="10,19,0,0" VerticalAlignment="Top" Click="bodydetect_checkbox_Click"/>
+                <CheckBox x:Name="move_checkbox" Content="Emulate Move(ROS)" HorizontalAlignment="Left" Margin="224,19,0,0" VerticalAlignment="Top" Click="move_checkbox_Click" Checked="move_checkbox_Checked"/>
+                <CheckBox x:Name="cameraspacepoint_checkbox" Content="Emulate CameraSpacePoint&#xD;&#xA;(DeepLearning)" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Click="cameraspacepoint_checkbox_Click"/>
+                <Button x:Name="startButton" Content="START" HorizontalAlignment="Left" Margin="112,143,0,0" VerticalAlignment="Top" Width="185" Height="27" FontSize="20" Click="startButton_Click"/>
+                <CheckBox x:Name="hand_checkbox" Content="Emulate Hand" HorizontalAlignment="Left" Margin="224,75,0,0" VerticalAlignment="Top" Width="135" Click="hand_checkbox_Click"/>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>

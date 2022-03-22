@@ -1,0 +1,822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7392B70D-8C95-46A0-8FEA-F3A1B771FBF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SITRobotSystem_wpf</RootNamespace>
+    <AssemblyName>SITRobotSystem-wpf</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Emgu.CV, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.GPU, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Emgu\emgucv-windows-universal-cuda 2.4.10.1940\bin\Emgu.CV.GPU.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.ML">
+      <HintPath>F:\Emgu\emgucv-windows-universal-cuda 2.4.10.1940\bin\Emgu.CV.ML.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.OCR">
+      <HintPath>D:\Robot\Emgu2410\emgucv-windows-universal-cuda 2.4.10.1940\bin\Emgu.CV.OCR.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.OpenCL">
+      <HintPath>D:\Robot\Emgu2410\emgucv-windows-universal-cuda 2.4.10.1940\bin\Emgu.CV.OpenCL.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.Stitching">
+      <HintPath>D:\Robot\Emgu2410\emgucv-windows-universal-cuda 2.4.10.1940\bin\Emgu.CV.Stitching.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>D:\Robot\Emgu2410\emgucv-windows-universal-cuda 2.4.10.1940\bin\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.VideoStab">
+      <HintPath>D:\Robot\Emgu2410\emgucv-windows-universal-cuda 2.4.10.1940\bin\Emgu.CV.VideoStab.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util">
+      <HintPath>D:\Robot\Emgu2410\emgucv-windows-universal-cuda 2.4.10.1940\bin\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Kinect, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Kinect.VisualGestureBuilder, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Speech, Version=11.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Microsoft SDKs\Speech\v11.0\Assembly\Microsoft.Speech.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BLL\Competitions\FuckingSurprise\FuckingSurpriseCompetition.cs" />
+    <Compile Include="BLL\Competitions\FuckingSurprise\FuckingSurpriseMethods.cs" />
+    <Compile Include="BLL\Competitions\GPSR_2015\GPSR_2015Competition.cs" />
+    <Compile Include="BLL\Competitions\GPSR_2015\GPSR_2015Follow.cs" />
+    <Compile Include="BLL\Competitions\GPSR_2015\GPSR_2015Stage.cs" />
+    <Compile Include="BLL\Competitions\GPSR_2015\GPSR_2015Task.cs" />
+    <Compile Include="BLL\Competitions\HelpMeCarry\HelpMeCarryCompetition.cs" />
+    <Compile Include="BLL\Competitions\HelpMeCarry\HelpMeCarryStage.cs" />
+    <Compile Include="BLL\Competitions\HelpMeCarry\HelpMeCarryTask.cs" />
+    <Compile Include="BLL\Competitions\Huawei\HuaweiCompetition.cs" />
+    <Compile Include="BLL\Competitions\Huawei\HuaweiStage.cs" />
+    <Compile Include="BLL\Competitions\Huawei\HuaweiTask.cs" />
+    <Compile Include="BLL\Competitions\MORecognition\MORecognitionCompetition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BLL\Competitions\MORecognition\MORecognitionStage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BLL\Competitions\MORecognition\MORecognitionTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BLL\Competitions\NavigationTest\NavigationTestCompetition.cs" />
+    <Compile Include="BLL\Competitions\NavigationTest\NavigationTestFollow.cs" />
+    <Compile Include="BLL\Competitions\NavigationTest\NavigationTestStage.cs" />
+    <Compile Include="BLL\Competitions\NavigationTest\NavigationTestTask.cs" />
+    <Compile Include="BLL\Competitions\OpenChallenge2015\OpenChallenge2015Competition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BLL\Competitions\OpenChallenge2015\OpenChallenge2015Stage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BLL\Competitions\OpenChallenge2015\OpenChallenge2015Task.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BLL\Competitions\PersonRecognition\PersonRecognitionCompetition.cs" />
+    <Compile Include="BLL\Competitions\PersonRecognition\PersonRecognitionStage.cs" />
+    <Compile Include="BLL\Competitions\PersonRecognition\PersonRecognitionTask.cs" />
+    <Compile Include="BLL\Competitions\Restaurant2015\Restaurant2015Competition.cs" />
+    <Compile Include="BLL\Competitions\Restaurant2015\Restaurant2015FollowTask.cs" />
+    <Compile Include="BLL\Competitions\Restaurant2015\Restaurant2015Stage.cs" />
+    <Compile Include="BLL\Competitions\Restaurant2015\Restaurant2015StageFollow.cs" />
+    <Compile Include="BLL\Competitions\Restaurant2015\Restaurant2015Task.cs" />
+    <Compile Include="BLL\Competitions\Restaurant2017\Restaurant2017Competition.cs" />
+    <Compile Include="BLL\Competitions\Restaurant2017\Restaurant2017Stage.cs" />
+    <Compile Include="BLL\Competitions\Restaurant2017\Restaurant2017Task.cs" />
+    <Compile Include="BLL\Competitions\SetTable2017\SetTable2017Competition.cs" />
+    <Compile Include="BLL\Competitions\SetTable2017\SetTable2017Stage.cs" />
+    <Compile Include="BLL\Competitions\SetTable2017\SetTable2017Task.cs" />
+    <Compile Include="BLL\Competitions\RoboZoo\ZooCompetition.cs" />
+    <Compile Include="BLL\Competitions\RoboZoo\ZooStages.cs" />
+    <Compile Include="BLL\Competitions\Robo_Nures_2015\Robo_Nures_2015Competition.cs" />
+    <Compile Include="BLL\Competitions\Robo_Nures_2015\Robo_Nures_2015Stage.cs" />
+    <Compile Include="BLL\Competitions\Robo_Nures_2015\Robo_Nures_2015Task.cs" />
+    <Compile Include="BLL\Competitions\Speech Recognition and Audio Detection Test\SRAD_Competition.cs" />
+    <Compile Include="BLL\Competitions\Speech Recognition and Audio Detection Test\SRAD_Stage.cs" />
+    <Compile Include="BLL\Competitions\Speech Recognition and Audio Detection Test\SRAD_Task.cs" />
+    <Compile Include="BLL\Competitions\WakeMeUp\WakeMeUpCompetition.cs" />
+    <Compile Include="BLL\Competitions\WakeMeUp\WakeMeUpStage.cs" />
+    <Compile Include="BLL\Competitions\WakeMeUp\WakeMeUpTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\BaseFunction\BaseFunctionStage.cs" />
+    <Compile Include="BLL\Competitions\ZOther\BSR\BSRCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\BSR\BSRStage.cs" />
+    <Compile Include="BLL\Competitions\ZOther\BSR\BSRTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Demonstrate\DemonstrateCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Demonstrate\DemonstrateStages.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Demonstrate\DemonstrateTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Follow\FollowCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Follow\FollowStage.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Follow\FollowTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\GPSR\GpsrCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\GPSR\GpsrStages.cs" />
+    <Compile Include="BLL\Competitions\ZOther\HomeAccident\HomeAccidentCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\HomeAccident\HomeAccidentStages.cs" />
+    <Compile Include="BLL\Competitions\ZOther\HomeAccident\HomeAccidentTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Home\GPSRPlus\GPSRPlusCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Home\GPSRPlus\GPSRPlusStage.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Home\GPSRPlus\GPSRPlusTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Home\mutipleObjRecognition\MutipleObjRecognitionComptition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Home\mutipleObjRecognition\MutipleObjRecognitionStage.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Home\mutipleObjRecognition\MutipleObjRecognitionTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Home\Navigation\NavigationCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Home\Navigation\NavigationStage.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Home\Navigation\NavigationTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Home\PersonRecognition\PersonRecognitionCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Home\PersonRecognition\PersonRecognitionStage.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Home\PersonRecognition\PersonRecognitionTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Home\SpeechRecognition\SpeechRecognitionCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Home\SpeechRecognition\SpeechRecognitionStage.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Home\SpeechRecognition\SpeechRecognitionTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Innovation\InnovationCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Innovation\InnovationStages.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Innovation\InnovationTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\LongGPSR\LongGPSRCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\LongGPSR\LongGPSRStages.cs" />
+    <Compile Include="BLL\Competitions\ZOther\LongGPSR\LongGPSRTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\makehamburger\makehamburgerCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\makehamburger\makeHamburgerStage.cs" />
+    <Compile Include="BLL\Competitions\ZOther\makehamburger\makeHamburgerTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\MOrecognition\MOCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\MOrecognition\MOStage.cs" />
+    <Compile Include="BLL\Competitions\ZOther\MOrecognition\MOTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\nonFinite\Non-finiteCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\nonFinite\Non-finiteStage.cs" />
+    <Compile Include="BLL\Competitions\ZOther\nonFinite\Non-finiteTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\restaurant\restaurantCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\restaurant\restaurantStage.cs" />
+    <Compile Include="BLL\Competitions\ZOther\restaurant\restaurantStageFollow.cs" />
+    <Compile Include="BLL\Competitions\ZOther\shopping\ShoppingCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\shopping\ShoppingStage.cs" />
+    <Compile Include="BLL\Competitions\ZOther\shopping\ShoppingStageFollow.cs" />
+    <Compile Include="BLL\Competitions\ZOther\shopping\ShoppingTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\WhoisWho\ClientSocket.cs" />
+    <Compile Include="BLL\Competitions\ZOther\WhoisWho\WhoisWhoCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\WhoisWho\WhoisWhoStage.cs" />
+    <Compile Include="BLL\Competitions\ZOther\WhoisWho\WhoisWhoTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\zizhuzhuti\ZiZhuZhuTiCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\zizhuzhuti\ZiZhuZhuTiStages.cs" />
+    <Compile Include="BLL\Competitions\ZOther\zizhuzhuti\ZiZhuZhuTiTask.cs" />
+    <Compile Include="BLL\Competitions\RoboZoo\ZooTask.cs" />
+    <Compile Include="BLL\Connection\Client.cs" />
+    <Compile Include="BLL\Connection\KinectConnection.cs" />
+    <Compile Include="BLL\Connection\KinectProcesser.cs" />
+    <Compile Include="BLL\Connection\MachineLearningConnection.cs" />
+    <Compile Include="BLL\Connection\SitRobotHub.cs" />
+    <Compile Include="BLL\Connection\VisionHub.cs" />
+    <Compile Include="BLL\FunctionClass\BitmapSourceConvert.cs" />
+    <Compile Include="BLL\FunctionClass\FileManager.cs" />
+    <Compile Include="BLL\FunctionClass\KinectInfo.cs" />
+    <Compile Include="BLL\FunctionClass\MathPloblems.cs" />
+    <Compile Include="BLL\FunctionClass\PDFMaker.cs" />
+    <Compile Include="BLL\FunctionClass\singleton.cs" />
+    <Compile Include="BLL\FunctionClass\StrProcesser.cs" />
+    <Compile Include="BLL\Service\GestureDetector.cs" />
+    <Compile Include="BLL\Service\GestureResultView.cs" />
+    <Compile Include="BLL\Service\KinectDepthReader.cs" />
+    <Compile Include="BLL\Service\MyColorFrame.cs" />
+    <Compile Include="BLL\Service\MutipleFrame.cs" />
+    <Compile Include="BLL\Service\SurfFeature.cs" />
+    <Compile Include="BLL\Service\UserTracker.cs" />
+    <Compile Include="BLL\Stages\FollowStage.cs" />
+    <Compile Include="BLL\State\SitRobotConfig.cs" />
+    <Compile Include="BLL\Tasks\AudioDetection.cs" />
+    <Compile Include="BLL\Tasks\FollowTask.cs" />
+    <Compile Include="DAL\DBCMDConfig.cs" />
+    <Compile Include="DAL\DBConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="entity\EulerAngle.cs" />
+    <Compile Include="entity\Leg.cs" />
+    <Compile Include="entity\MachineLearingResult.cs" />
+    <Compile Include="entity\PoseStamped.cs" />
+    <Compile Include="entity\Sex.cs" />
+    <Compile Include="entity\SurfResult.cs" />
+    <Compile Include="entity\TrainedFileList.cs" />
+    <Compile Include="entity\User.cs" />
+    <Compile Include="SITRobotSystemDataBaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SITRobotSystemDataBaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\CompetitionWindows\FuckingSurprise.xaml.cs">
+      <DependentUpon>FuckingSurprise.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\CompetitionWindows\GPSR_2015Window.xaml.cs">
+      <DependentUpon>GPSR_2015Window.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SITRobotWindow\CompetitionWindows\HelpMeCarryWindow.xaml.cs">
+      <DependentUpon>HelpMeCarryWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\CompetitionWindows\HuaweiWindow.xaml.cs">
+      <DependentUpon>HuaweiWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\Other\CompetitionWindows\MORecognitionWindow.xaml.cs">
+      <DependentUpon>MORecognitionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\CompetitionWindows\OpenChallengeWindows.xaml.cs">
+      <DependentUpon>OpenChallengeWindows.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SITRobotWindow\CompetitionWindows\PersonRecognitionWindow.xaml.cs">
+      <DependentUpon>PersonRecognitionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\CompetitionWindows\RoboZoo2015Windows.xaml.cs">
+      <DependentUpon>RoboZoo2015Windows.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\CompetitionWindows\Robo_Nures_2015Window.xaml.cs">
+      <DependentUpon>Robo_Nures_2015Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\CompetitionWindows\NavigationTestWindow.xaml.cs">
+      <DependentUpon>NavigationTestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\CompetitionWindows\Restaurant2015Window.xaml.cs">
+      <DependentUpon>Restaurant2015Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\CompetitionWindows\SetTable2017Window.xaml.cs">
+      <DependentUpon>SetTable2017Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\CompetitionWindows\WakeMeUpWindow.xaml.cs">
+      <DependentUpon>WakeMeUpWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\MainWindows\CompetitionMainWindow.xaml.cs">
+      <DependentUpon>CompetitionMainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\Other\CompetitionWindows\BSRWindow.xaml.cs">
+      <DependentUpon>BSRWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\Other\CompetitionWindows\DemonstrateWindow.xaml.cs">
+      <DependentUpon>DemonstrateWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\Other\CompetitionWindows\FollowWindow.xaml.cs">
+      <DependentUpon>FollowWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\Other\CompetitionWindows\HomeAccidentWindow.xaml.cs">
+      <DependentUpon>HomeAccidentWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\Other\CompetitionWindows\HumburgerWindow.xaml.cs">
+      <DependentUpon>HumburgerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\Other\CompetitionWindows\InnovationWindows.xaml.cs">
+      <DependentUpon>InnovationWindows.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\Other\CompetitionWindows\LongGpsrWindow.xaml.cs">
+      <DependentUpon>LongGpsrWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\Other\CompetitionWindows\shoppingWindow.xaml.cs">
+      <DependentUpon>shoppingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\Other\CompetitionWindows\WhoisWhoWindow.xaml.cs">
+      <DependentUpon>WhoisWhoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\Other\CompetitionWindows\ZooWindow.xaml.cs">
+      <DependentUpon>ZooWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\MainWindows\TestMainWindow.xaml.cs">
+      <DependentUpon>TestMainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\Other\ZotherCompetitionWindow.xaml.cs">
+      <DependentUpon>ZotherCompetitionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\AudioAngleTest.xaml.cs">
+      <DependentUpon>AudioAngleTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\GoodsWindow.xaml.cs">
+      <DependentUpon>GoodsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\ImagePDFTestWindow.xaml.cs">
+      <DependentUpon>ImagePDFTestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\MachineLearningTestWindow.xaml.cs">
+      <DependentUpon>MachineLearningTestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\ShowGoodsWindow.xaml.cs">
+      <DependentUpon>ShowGoodsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\ShowPlaceWindow.xaml.cs">
+      <DependentUpon>ShowPlaceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\showText.xaml.cs">
+      <DependentUpon>showText.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\SpeechRecognitionAudioDetectionWindow.xaml.cs">
+      <DependentUpon>SpeechRecognitionAudioDetectionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\speechWindows\SpeechTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\speechWindows\SpeechTestForm.designer.cs">
+      <DependentUpon>SpeechTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\speechWindows\fStageOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\speechWindows\fStageOutput.designer.cs">
+      <DependentUpon>fStageOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\TestingConnectionWindow.xaml.cs">
+      <DependentUpon>TestingConnectionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\BaseTestWindow.xaml.cs">
+      <DependentUpon>BaseTestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\DBTest.xaml.cs">
+      <DependentUpon>DBTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\GoodsTestWindow.xaml.cs">
+      <DependentUpon>GoodsTestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\HandTest.xaml.cs">
+      <DependentUpon>HandTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\RobotConfigWindow.xaml.cs">
+      <DependentUpon>RobotConfigWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\VisionWindows\BodyWindow.xaml.cs">
+      <DependentUpon>BodyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\VisionWindows\ColorFrameCVwindow.xaml.cs">
+      <DependentUpon>ColorFrameCVwindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\VisionWindows\ColorWindow.xaml.cs">
+      <DependentUpon>ColorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\VisionWindows\DepthWindow.xaml.cs">
+      <DependentUpon>DepthWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\VisionWindows\FaceTextWindow.xaml.cs">
+      <DependentUpon>FaceTextWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\VisionWindows\MachineLearingWindow.xaml.cs">
+      <DependentUpon>MachineLearingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\VisionWindows\SURFWindow.xaml.cs">
+      <DependentUpon>SURFWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\testWindows\VisionWindows\UsersInfoWindow.xaml.cs">
+      <DependentUpon>UsersInfoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WindowCtrl.cs" />
+    <Page Include="SITRobotWindow\CompetitionWindows\FuckingSurprise.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\CompetitionWindows\GPSR_2015Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\CompetitionWindows\HelpMeCarryWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\CompetitionWindows\HuaweiWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SITRobotWindow\Other\CompetitionWindows\MORecognitionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\CompetitionWindows\NavigationTestWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\CompetitionWindows\OpenChallengeWindows.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\CompetitionWindows\PersonRecognitionWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SITRobotWindow\CompetitionWindows\Restaurant2015Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\CompetitionWindows\RoboZoo2015Windows.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\CompetitionWindows\Robo_Nures_2015Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SITRobotWindow\CompetitionWindows\SetTable2017Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\CompetitionWindows\WakeMeUpWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\MainWindows\CompetitionMainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SITRobotWindow\Other\CompetitionWindows\BaseFunction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\Other\CompetitionWindows\BSRWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\Other\CompetitionWindows\DemonstrateWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\Other\CompetitionWindows\FollowWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\Other\CompetitionWindows\GpsrWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\Other\CompetitionWindows\HomeAccidentWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SITRobotWindow\Other\CompetitionWindows\HumburgerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\Other\CompetitionWindows\InnovationWindows.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\Other\CompetitionWindows\LongGpsrWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\Other\CompetitionWindows\shoppingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\Other\CompetitionWindows\WhoisWhoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\Other\CompetitionWindows\ZooWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\Other\CompetitionWindows\stateWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\MainWindows\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BLL\Competitions\ZOther\BaseFunction\BaseFunctionCompetition.cs" />
+    <Compile Include="BLL\Competitions\ZOther\BaseFunction\BaseFunctionTask.cs" />
+    <Compile Include="BLL\Competitions\ZOther\Competition.cs" />
+    <Compile Include="BLL\ServiceCtrl\SitRobotSpeech.cs" />
+    <Compile Include="BLL\Service\KinectAudioStream.cs" />
+    <Compile Include="BLL\Stages\Stage.cs" />
+    <Compile Include="BLL\State\VoiceState.cs" />
+    <Compile Include="BLL\State\VoiceStatePublisher.cs" />
+    <Compile Include="BLL\Tasks\Tasks.cs" />
+    <Compile Include="BLL\Connection\ArmConnection.cs" />
+    <Compile Include="BLL\FunctionClass\Publisher.cs" />
+    <Compile Include="BLL\ServiceCtrl\ArmCtrl.cs" />
+    <Compile Include="BLL\ServiceCtrl\BaseCtrl.cs" />
+    <Compile Include="BLL\ServiceCtrl\VisionCtrl.cs" />
+    <Compile Include="BLL\State\ArmState.cs" />
+    <Compile Include="BLL\State\ArmStatePublisher.cs" />
+    <Compile Include="BLL\State\BaseState.cs" />
+    <Compile Include="BLL\State\BaseStatePublisher.cs" />
+    <Compile Include="BLL\State\State.cs" />
+    <Compile Include="BLL\State\StatePublisher.cs" />
+    <Compile Include="BLL\State\VisionState.cs" />
+    <Compile Include="BLL\State\VisionStatePublisher.cs" />
+    <Compile Include="BLL\Competitions\ZOther\GPSR\GpsrTask.cs" />
+    <Compile Include="BLL\Connection\BaseConnection.cs" />
+    <Compile Include="DAL\DBConnection.cs" />
+    <Compile Include="DAL\DBCMDGoods.cs" />
+    <Compile Include="DAL\DBCMDPlace.cs" />
+    <Compile Include="DAL\DBCtrl.cs" />
+    <Compile Include="entity\ArmAction.cs" />
+    <Compile Include="entity\Command.cs" />
+    <Compile Include="entity\Header.cs" />
+    <Compile Include="entity\Goods.cs" />
+    <Compile Include="entity\ObjCameraPosition.cs" />
+    <Compile Include="entity\Person.cs" />
+    <Compile Include="entity\Place.cs" />
+    <Compile Include="entity\Point.cs" />
+    <Compile Include="entity\Quaternion.cs" />
+    <Compile Include="entity\Thing.cs" />
+    <Compile Include="Interface\IArm.cs" />
+    <Compile Include="Interface\IBase.cs" />
+    <Compile Include="Interface\ICompitition.cs" />
+    <Compile Include="Interface\IDB.cs" />
+    <Compile Include="Interface\IDBCtrl.cs" />
+    <Compile Include="Interface\IService.cs" />
+    <Compile Include="Interface\IStage.cs" />
+    <Compile Include="Interface\IState.cs" />
+    <Compile Include="Interface\ITask.cs" />
+    <Compile Include="Interface\ITest.cs" />
+    <Compile Include="Interface\IUI.cs" />
+    <Compile Include="Interface\IVision.cs" />
+    <Compile Include="Interface\IVoice.cs" />
+    <Compile Include="SITRobotWindow\Other\CompetitionWindows\BaseFunction.xaml.cs">
+      <DependentUpon>BaseFunction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\Other\CompetitionWindows\GpsrWindow.xaml.cs">
+      <DependentUpon>GpsrWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\Other\CompetitionWindows\stateWindow.xaml.cs">
+      <DependentUpon>stateWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SITRobotWindow\MainWindows\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="SITRobotWindow\MainWindows\TestMainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\Other\ZotherCompetitionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\AudioAngleTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\GoodsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\ImagePDFTestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\MachineLearningTestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\ShowGoodsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\ShowPlaceWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\showText.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\SpeechRecognitionAudioDetectionWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\TestingConnectionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\BaseTestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\DBTest.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\GoodsTestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\HandTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\RobotConfigWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\VisionWindows\BodyWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\VisionWindows\ColorFrameCVwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\VisionWindows\ColorWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\VisionWindows\DepthWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\VisionWindows\FaceTextWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\VisionWindows\MachineLearingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\VisionWindows\SURFWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SITRobotWindow\testWindows\VisionWindows\UsersInfoWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SITRobotWindow\testWindows\speechWindows\SpeechTestForm.resx">
+      <DependentUpon>SpeechTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SITRobotWindow\testWindows\speechWindows\fStageOutput.resx">
+      <DependentUpon>fStageOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="ClassDiagram5.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="SITRobotSystemDataBaseDataSet.xsc">
+      <DependentUpon>SITRobotSystemDataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SITRobotSystemDataBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>SITRobotSystemDataBaseDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SITRobotSystemDataBaseDataSet.xss">
+      <DependentUpon>SITRobotSystemDataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <Content Include="gestureDataBase\Seated.gbd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BLL\Competitions\Other\" />
+    <Folder Include="BLL\Competitions\ZOther\Robo-Nurse\Person recognition test\" />
+    <Folder Include="BLL\Competitions\ZOther\Zoo\" />
+    <Folder Include="DB\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Kinect.ico" />
+    <Resource Include="Images\Logo.png" />
+    <Resource Include="Images\ScreenshotHover.png" />
+    <Resource Include="Images\ScreenshotNormal.png" />
+    <Resource Include="Images\Status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BLL\Competitions\Speech Recognition and Audio Detection Test\QuestionList.xml" />
+    <Content Include="DLL\itextsharp.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

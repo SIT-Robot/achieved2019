@@ -1,0 +1,31 @@
+﻿<Window x:Class="i_Shit_Scirpt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:i_Shit_Scirpt"
+        mc:Ignorable="d"
+        Title="HandDebuger" Height="505.666" Width="663.567">
+    <Grid >
+        <Label x:Name="FBIWARNING" Content="动手臂之前先Init！！！！————————→&#xD;&#xA;动手臂之前先Init！！！！————————→&#xD;&#xA;动手臂之前先Init！！！！————————→&#xD;&#xA;重要的事情说三遍！因为给的都是相对坐标" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="91" Width="329" FontWeight="Bold" FontSize="14" FontFamily="Arial Black" Foreground="Red"/>
+        <Button x:Name="initButton" Content="Init" HorizontalAlignment="Left" Margin="344,10,0,0" VerticalAlignment="Top" Width="284" Height="75" FontSize="30" Foreground="#FFF2FD02" Background="Red" Click="button_Click"/>
+        <Label x:Name="label" Content="当前升降丝杆位置:" HorizontalAlignment="Left" Margin="66,316,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="label1" Content="当前爪子位置:" HorizontalAlignment="Left" Margin="90,155,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="zhuaziPositionBox" HorizontalAlignment="Left" Height="37" Margin="180,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0"/>
+        <TextBox x:Name="siganPostionBox" HorizontalAlignment="Left" Height="40" Margin="180,308,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0"/>
+        <TextBox x:Name="zhuaziAdjBox" HorizontalAlignment="Left" Height="40" Margin="465,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="109" Text="10"/>
+        <Button x:Name="zhuaziOpenButton" Content="爪子张开(-)" HorizontalAlignment="Left" Margin="418,170,0,0" VerticalAlignment="Top" Width="86" Height="64" Click="zhuaziOpenButton_Click"/>
+        <Button x:Name="zhuaziCloseButton" Content="爪子收拢(+)" HorizontalAlignment="Left" Margin="542,170,0,0" VerticalAlignment="Top" Width="86" Height="64" Click="zhuaziCloseButton_Click"/>
+        <TextBox x:Name="siganAdjBox" HorizontalAlignment="Left" Height="40" Margin="465,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="109" Text="10"/>
+        <Button x:Name="siganUpButton" Content="丝杆上升(+)" HorizontalAlignment="Left" Margin="418,328,0,0" VerticalAlignment="Top" Width="86" Height="64" Click="siganUpButton_Click"/>
+        <Button x:Name="siganDownButton" Content="丝杆下降(-)" HorizontalAlignment="Left" Margin="542,328,0,0" VerticalAlignment="Top" Width="86" Height="64" Click="siganDownButton_Click"/>
+        <Label x:Name="label2" Content="(范围0-2400，注意看丝杆别顶炸上面)" HorizontalAlignment="Left" Height="30" Margin="66,273,0,0" VerticalAlignment="Top" Width="244"/>
+        <Label x:Name="label3" Content="(范围0-186，注意看爪子)" HorizontalAlignment="Left" Margin="90,117,0,0" VerticalAlignment="Top" Width="210"/>
+        <Label x:Name="label4" Content="旋转舵机位置（16进制）&#xD;&#xA;(范围03-15)" HorizontalAlignment="Left" Margin="79,417,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="rotateBox" HorizontalAlignment="Left" Height="41" Margin="228,415,0,0" TextWrapping="Wrap" Text="0B" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="setRotate" Content="Set" HorizontalAlignment="Left" Margin="353,412,0,0" VerticalAlignment="Top" Width="96" Height="53" Click="setRotate_Click"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+﻿<Window x:Class="SITRobotSystem_wpf.SITRobotWindow.Other.CompetitionWindows.SpeechRecognitionAudioDetectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SpeechRecognitionAudioDetectionWindow" Height="400" Width="400">
+    <Grid>
+        <Button x:Name="button_start" Content="Start！" HorizontalAlignment="Left" Margin="122,131,0,0" VerticalAlignment="Top" Width="149" Height="135" Click="button_start_Click"/>
+
+    </Grid>
+</Window>
